@@ -7,7 +7,17 @@
     <aside id="sidebar" class="alignright"><%- partial('_partial/sidebar') %></aside>
     <div class="clearfix"></div>
   </div>
-  <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
+  <footer id="footer" class="inner">
+    <p class="links">
+      <% for (key in site.data.link) { %>
+        <a href="<%- site.data.link[key] %>"><%- key %></a>
+      <% } %>
+    </p>
+    <%- partial('_partial/footer') %>
+  </footer>
   <%- partial('_partial/after_footer') %>
+  <%- partial('_widget/link') %>
+
+  <%- partial('_partial/tongji') %>
 </body>
 </html>

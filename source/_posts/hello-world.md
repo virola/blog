@@ -1,4 +1,6 @@
 title: Hello World
+date: 2015-03-26 15:59:45
+category: whatever
 tags: whatever
 ---
 
@@ -9,4 +11,4 @@ tags: whatever
 不过现在还遗留问题就是，哪天要是想用手机写博客，可能就没法publish了。不过用手机在github上写博的概率应该很小吧，现在连手机打字都嫌累的说。
 感觉这样管理起来自己的博客真是太容易了。
 
-接下来要研究研究怎么把`jsfiddler`之流整合进来。
+接下来要研究研究怎么把`jsfiddler`之流整合进来。参考文档：<http://hexo.io/docs/tag-plugins.html#jsFiddle>
