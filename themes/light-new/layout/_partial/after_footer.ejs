@@ -11,3 +11,25 @@
 })(jQuery);
 </script>
 <% } %>
+<a id="return-top" href="#"><i class="icon-arrow-up"></i></a>
+
+<script>
+$(function () {
+  var topbtn = $('#return-top').hide();
+  $(window).on('scroll', function () {
+    var scrollTop = $(document.body).scrollTop();
+    if (scrollTop > 100) {
+        topbtn.fadeIn();
+    }
+    else {
+        topbtn.fadeOut();
+    }
+  });
+  topbtn.on('click', function () {
+      $(document.body).animate({
+          'scrollTop': 0
+      });
+      return false;
+  });
+});
+</script>
