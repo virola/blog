@@ -1,6 +1,7 @@
 title: "centos 7 虚拟机安装记录"
 date: 2015-03-30 15:13:09
-tags: linux
+tags:
+- linux
 category: whatever
 ---
 
@@ -21,6 +22,8 @@ vmare player安装过程我就不细说了，基本傻瓜式，比较给力的�
 后来假死的时候切换出来调win的任务管理器发现，原来是硬盘I/O的处理速度跟不上。
 vmware卡死的时候硬盘读写占用一直都是100%，遇到过几次这种情况，每次只能等啊等等到磁盘使用率过一段时间降下来之后，就能切换进虚拟机go on了。
 
+<!-- more -->
+
 ## Google Chrome
 作为一个BD出品的FE，Chrome自然是心头爱，虽然centos自带firefox似乎也挺好用，但是chrome积累了好几年的config还是想同步过来。
 安装chrome没有什么可说的，翻个墙去[官网](http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html)下载 rpm 版本的软件安装上就能用。
@@ -31,12 +34,17 @@ vmware卡死的时候硬盘读写占用一直都是100%，遇到过几次这种�
 sudo yum install git
 ```
 
+可以再顺手装个[gitflow](https://github.com/nvie/gitflow/wiki/Installation)来增强git操作。
+```
+sudo yum install gitflow
+```
+
 ## node.js
 因为安装centos的主要目的就是想在更好的工具环境里面写博客和建设网站，博客和网站的工具环境都是nodejs，所以装node自然不必说。
 
 1. [官网](https://nodejs.org/)tar包下载好
-2. 解压出 node-v0.12.1 目录， cd node-v0.12.1
-3. 运行命令
+1. 解压出 node-v0.12.1 目录， cd node-v0.12.1
+1. 运行命令
     ```
     ./configure
     sudo make
@@ -78,4 +86,71 @@ editor:
   softWrap: true
   softWrapAtPreferredLineLength: true
   preferredLineLength: 120
+```
+
+## Nginx+PHP
+要搭建服务器必备工具。
+
+### EPEL 软件仓库
+EPEL（http://fedoraproject.org/wiki/EPEL） 是由 Fedora 社区打造，为 RHEL 及衍生发行版如 CentOS、Scientific Linux 等提供高质量软件包的项目。装上了 EPEL，就像在 Fedora 上一样，可以通过 yum install package-name，随意安装软件。
+
+```
+rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+```
+
+可在下面链接里寻找:<http://fedoraproject.org/wiki/EPEL/FAQ#howtouse>
+
+安装完毕之后，即可使用 yum 来安装软件，比如 git：`yum install git` ,
+若要查看 EPEL Repo 中是否存在某个软件包： `yum search package-name`
+
+### 安装nginx+php+mysql
+```
+yum -y install nginx mysql-server php-fpm php-cli php-pdo php-mysql php-mcrypt php-mbstring php-gd php-tidy php-xml php-xmlrpc php-pear php-pecl-memcache php-eaccelerator
+```
+
+mysql-server这个包没装上= =
+
+### 开机启动
+开机启动
+```
+chkconfig --level 345 mysqld on  
+chkconfig --level 345 php-fpm on  
+chkconfig --level 345 nginx on
+```
+### 配置文件
+
+- /etc/nginx/nginx.conf
+- /etc/nginx/fastcgi_params
+- /etc/php-fpm.conf
+
+### 操作命令
+启动命令：
+
+```
+nginx
+php-fpm
+```
+
+## 其他
+git alias配置
+
+```
+git config --global alias.l   "log --color --graph --decorate --pretty=oneline --abbrev-commit"
+git config --global alias.l0  "log --color --graph --decorate --pretty=oneline --abbrev-commit -U0"
+git config --global alias.la  "log --color --graph --decorate --pretty=oneline --abbrev-commit --all"
+git config --global alias.lb  "log --color --graph --decorate --pretty=oneline --abbrev-commit --all --simplify-by-decoration"
+git config --global alias.lg  "log --color --graph --decorate"
+git config --global alias.dl   "log --date-order --color --graph --decorate --pretty=oneline --abbrev-commit"
+git config --global alias.dla  "log --date-order --color --graph --decorate --pretty=oneline --abbrev-commit --all"
+git config --global alias.dlb  "log --date-order --color --graph --decorate --pretty=oneline --abbrev-commit --all --simplify-by-decoration"
+git config --global alias.dlg  "log --date-order --color --graph --decorate"
+git config --global alias.d   "diff --color"
+git config --global alias.dc  "diff --color --cached"
+git config --global alias.d0  "diff --color --unified=0"
+
+git config --global alias.ci  "commit --verbose"
+git config --global alias.co  "checkout"
+git config --global alias.tr  "checkout --track"
+git config --global alias.s   "status --short"
+git config --global alias.st  "status"
 ```

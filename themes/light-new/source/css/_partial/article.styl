@@ -101,9 +101,9 @@ article
         display none
       &:before
         position absolute
-        font 32px font-icon    
+        font 32px font-icon
         top 0
-        left 0 
+        left 0
         width 32px
         text-align center
 
@@ -160,6 +160,11 @@ article
       border 1px solid color-border
       border-radius 3px
 
+    em
+      -webkit-text-emphasis: filled circle
+      -webkit-text-emphasis-position: under
+      font-style: normal
+
     pre
       background #eee
       border 1px solid color-border
@@ -192,10 +197,10 @@ article
       max-width 100%
       height auto
       border none
-    
+
     img.photo
       width: 400px
-      @media screen and (max-width: 600px) 
+      @media screen and (max-width: 600px)
         width: auto
 
     iframe
@@ -249,7 +254,7 @@ article
     position relative
     min-height 16px
     a
-      color color-meta
+      color color-font
       &:hover
         color color-link
         text-decoration none
@@ -259,6 +264,9 @@ article
         vertical-align middle
 
       &.more-link
+        font-size 14px
+        font-weight 600
+
         &:before
           content '\f054'
 
