@@ -6,4 +6,4 @@ date: 2015-03-26 16:21:35
 
 混迹互联网行业，喜好前端开发。
 
-{% img photo /album/luguhu/me2.jpg %}
+{% img photo /album/photo/virola.jpg %}

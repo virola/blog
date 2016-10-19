@@ -1,5 +1,5 @@
 # virola's blog
 
-<http://blog.virola-eko.com>
+<http://blog.zhuyuwei.cn>
 
 markdown blog
