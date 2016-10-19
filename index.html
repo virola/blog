@@ -1,0 +1,346 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Virola&#39;s Blog</title>
+  <meta name="author" content="Virola">
+  
+  <meta name="description" content="Virola&#39;s Blog">
+  
+  
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  
+  <meta property="og:site_name" content="Virola&#39;s Blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Virola&#39;s Blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Virola&#39;s Blog</a></h1>
+  <h2><a href="/">All I have is u</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="http://www.virola-eko.com">Home</a></li>
+    
+      <li><a href="/">Blog</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/about-me">About Me</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-03-30 15:13:09"><a href="/2015/centos-7-installation/">2015-03-30</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/centos-7-installation/">centos 7 虚拟机安装记录</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这几天也是蛋疼了，觉得机器上的windows系统太卡太慢，然后又十分想念mac上的命令行操作，一心想再弄个linux系统来写码练手。以前装过ubuntu虚拟机，印象中配置上似乎十分复杂，以至于后来一直不愿意再装一次，正好之前下载过centos 7.0的安装镜像，然后我的vps主机也是centos系统，觉得装同样的系统应该比较有亲切感。好在最近项目上比较轻松，马上放清明假的节奏大家都不太想排项目(&gt;_&lt;)，于是在各种利好的促使下，我又开始了一次我的折腾之旅。</p>
+<h2 id="虚拟机安装"><a href="#虚拟机安装" class="headerlink" title="虚拟机安装"></a>虚拟机安装</h2><p>vmare player安装过程我就不细说了，基本傻瓜式，比较给力的是我选的iso镜像装好之后自动就是gnome图形界面，之前见到过安装完成之后只有命令行界面的情况，我这个估计镜像版本不太一样。</p>
+<p>研究了半天终于搞清楚centos平台的可安装软件是 <strong>.rpm</strong> 后缀的，而不是 .deb 后缀的，基本上去网站上下载软件的时候都会提供这两个文件版本，选择正确的后缀名下载就好。</p>
+<h3 id="关于镜像的问题"><a href="#关于镜像的问题" class="headerlink" title="关于镜像的问题"></a>关于镜像的问题</h3><p>受以前安装ubuntu的龟速软件下载的经验影响，我以为这个centos为了提速也一样会需要修改国内镜像之类的，还去改了网易的镜像地址。<br>结果好像镜像地址过期，搞的yum下载不了东东，只好改回原镜像。万万没想到，系统切换完语言重启之后，自动选择了国内的镜像地址（sina的），下载速度刚刚的。</p>
+<h3 id="关于虚拟机卡、慢、假死问题"><a href="#关于虚拟机卡、慢、假死问题" class="headerlink" title="关于虚拟机卡、慢、假死问题"></a>关于虚拟机卡、慢、假死问题</h3><p>觉得奇怪，给虚拟机分配了<strong>50G硬盘</strong>、<strong>2G内存</strong>、<strong>2个处理器</strong>，结果还是开几个程序就卡死，尤其是在安装程序的时候死得更频繁。<br>后来假死的时候切换出来调win的任务管理器发现，原来是硬盘I/O的处理速度跟不上。<br>vmware卡死的时候硬盘读写占用一直都是100%，遇到过几次这种情况，每次只能等啊等等到磁盘使用率过一段时间降下来之后，就能切换进虚拟机go on了。</p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2015/centos-7-installation/#more" class="more-link">READ MORE</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="photo">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      
+        <img src="/album/handy/pic_1.jpg">
+      
+        <img src="/album/handy/pic_2.jpg">
+      
+        <img src="/album/handy/pic_3.jpg">
+      
+        <img src="/album/handy/pic_4.jpg">
+      
+        <img src="/album/handy/pic_5.jpg">
+      
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-03-27 00:00:00"><a href="/2015/gallery/">2015-03-27</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/gallery/">非典型文艺</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="photo">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      
+        <img src="/album/qinghai/1.jpg">
+      
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-03-26 18:59:45"><a href="/2015/qinghai/">2015-03-26</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/qinghai/">青海</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>2014年最值得的事情之一，就是一个人也坚持走完了中国大西北。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-03-26 15:59:45"><a href="/2015/hello-world/">2015-03-26</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/hello-world/">Hello World</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>感谢erik师父的推荐，用<a href="http://hexo.io" target="_blank" rel="external">hexo</a>这个小玩意，很快就搭建好了基于markdown写作的博客，终于可以抛弃纠结了多年苦于无替代工具的wordpress了啊。</p>
+<p>这东东不是所见即所得的，得在PC上搞 <code>hexo server</code> 才能看效果，文章写好了呢，还需要 <code>hexo generate</code> 生成网站，然后还要 <code>hexo deploy</code> 构建部署。 当然，也可以直接用 <code>hexo generate --deploy</code> 二合一命令完成后面两步的功能。</p>
+<p>不过现在还遗留问题就是，哪天要是想用手机写博客，可能就没法publish了。不过用手机在github上写博的概率应该很小吧，现在连手机打字都嫌累的说。<br>感觉这样管理起来自己的博客真是太容易了。</p>
+<p>接下来要研究研究怎么把<code>jsfiddler</code>之流整合进来。参考文档：<a href="http://hexo.io/docs/tag-plugins.html#jsFiddle" target="_blank" rel="external">http://hexo.io/docs/tag-plugins.html#jsFiddle</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+<nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav></div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:blog.virola-eko.com">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/photo/">photo</a><small>2</small></li>
+  
+    <li><a href="/categories/whatever/">whatever</a><small>2</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/linux/">linux</a><small>1</small></li>
+  
+    <li><a href="/tags/photo/">photo</a><small>2</small></li>
+  
+    <li><a href="/tags/travel/">travel</a><small>1</small></li>
+  
+    <li><a href="/tags/whatever/">whatever</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner">
+    <p class="links">
+      
+        <a href="/">Home</a>
+      
+        <a href="https://github.com/virola/blog">Github</a>
+      
+        <a href="http://www.virola-eko.com/admin/">Admin</a>
+      
+    </p>
+    <div class="alignleft">
+  
+  &copy; 2016 Virola
+  
+</div>
+<div class="clearfix"></div>
+  </footer>
+  <script src="//s1.bdstatic.com/r/www/cache/static/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<a id="return-top" href="#"><i class="icon-arrow-up"></i></a>
+
+<script>
+$(function () {
+  var topbtn = $('#return-top').hide();
+  $(window).on('scroll', function () {
+    var scrollTop = $(document.body).scrollTop();
+    if (scrollTop > 100) {
+        topbtn.fadeIn();
+    }
+    else {
+        topbtn.fadeOut();
+    }
+  });
+  topbtn.on('click', function () {
+      $(document.body).animate({
+          'scrollTop': 0
+      });
+      return false;
+  });
+});
+</script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61218530-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?dde78c2940b1eeab6127f4ed98b17630";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
