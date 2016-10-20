@@ -1,0 +1,18 @@
+menu:
+  Home: http://www.virola-eko.com
+  Blog: /
+  Archives: /archives
+  About Me: /about-me
+
+widgets:
+- search
+- category
+- tag
+
+excerpt_link: READ MORE
+
+share:
+  enable: true
+
+fancybox: true
+rss:
