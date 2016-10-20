@@ -68,6 +68,6 @@ theme: light-new
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/virola/blog.git
+  repo: git@github.com:virola/blog.git
   branch: deploy
   message: build my website
