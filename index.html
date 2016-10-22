@@ -53,6 +53,46 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2016-10-22 16:44:53"><a href="/2016/typescript-require-error/">2016-10-22</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2016/typescript-require-error/">angular2开发及typescript编译时总是报错 Cannot find name &#39;require&#39;.</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>用angular2开发项目时运行 <code>ng serve</code> ，控制台里一直有error报错：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Error in bail mode: [default] /Users/Virola/code/sites/ng2-app/src/app/app.component.ts:5:14 </div><div class="line">Cannot find name &apos;require&apos;.</div></pre></td></tr></table></figure>
+<p>虽然一直不知道什么原因，但是因为并不影响开发环境的项目效果所以一直没有理会。</p>
+<p>但是到了项目发布的时候，运行 <code>ng build</code> ，这时候就不行了，因为会出现上面这个错误，一直无法部署编译成功。</p>
+<p>去网上搜了一下相关帖子，发现实际上是 <strong>typescript</strong> 编译出的问题。</p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2016/typescript-require-error/#more" class="more-link">READ MORE</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2016-10-22 14:16:18"><a href="/2016/react-or-angular/">2016-10-22</a></time>
       
       
@@ -263,6 +303,8 @@
   
     <li><a href="/categories/photo/">photo</a><small>1</small></li>
   
+    <li><a href="/categories/tips/">tips</a><small>1</small></li>
+  
     <li><a href="/categories/whatever/">whatever</a><small>4</small></li>
   
   </ul>
@@ -273,6 +315,8 @@
 <div class="widget tag">
   <h3 class="title">标签</h3>
   <ul class="entry">
+  
+    <li><a href="/tags/angular/">angular</a><small>1</small></li>
   
     <li><a href="/tags/linux/">linux</a><small>1</small></li>
   
