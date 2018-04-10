@@ -17,7 +17,10 @@ get 请求的配置可以用这个方法：
 proxyTable: {
     // 数据代理，将所有 api/get 开头的请求转发给本地mock目录
     '/api/get': {
-        target: 'http://localhost:8080/static/mock'
+        target: 'http://localhost:8080/static/mock',
+        pathRewrite: {
+          '^/api/get': ''
+        }
     }
 }
 ```
