@@ -1,9 +1,15 @@
 {
   "name": "hexo-site",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
+  "author": "Virola <virola.zhu@gmail.com>",
   "hexo": {
     "version": "3.7.1"
+  },
+  "scripts": {
+    "dev": "hexo server",
+    "start": "npm run dev",
+    "build": "hexo clean && hexo deploy -g"
   },
   "dependencies": {
     "hexo": "^3.7.1",
