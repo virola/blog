@@ -133,6 +133,8 @@
   
     <li><a href="/categories/whatever/">whatever</a><small>5</small></li>
   
+    <li><a href="/categories/前端/">前端</a><small>1</small></li>
+  
   </ul>
 </div>
 
@@ -153,6 +155,8 @@
     <li><a href="/tags/photo/">photo</a><small>1</small></li>
   
     <li><a href="/tags/travel/">travel</a><small>1</small></li>
+  
+    <li><a href="/tags/vue/">vue</a><small>1</small></li>
   
     <li><a href="/tags/whatever/">whatever</a><small>2</small></li>
   
@@ -176,7 +180,7 @@
     </p>
     <div class="alignleft">
   
-  &copy; 2017 Virola
+  &copy; 2018 Virola
   
 </div>
 <div class="clearfix"></div>
@@ -200,8 +204,8 @@
 $(function () {
   var topbtn = $('#return-top').hide();
   $(window).on('scroll', function () {
-    var scrollTop = $(document.body).scrollTop();
-    if (scrollTop > 100) {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 200) {
         topbtn.fadeIn();
     }
     else {
@@ -209,7 +213,7 @@ $(function () {
     }
   });
   topbtn.on('click', function () {
-      $(document.body).animate({
+      $('html,body').animate({
           'scrollTop': 0
       });
       return false;

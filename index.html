@@ -53,7 +53,43 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2017-03-09 17:16:19"><a href="/2017/node-mysql-beginner/">2017-03-09</a></time>
+        <time datetime="2018-4-10 15:14:21"><a href="/2018/vue-json-mock-post/">2018-04-10</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2018/vue-json-mock-post/">VUE(版本v2.5)模拟POST本地json的方法</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>最近在学习vue项目开发，由于纯练手没有开发后端，只能用本地模拟数据进行。<br>找了网上的一些 json mock 方法，发现 get 请求可以通过 proxyTable 进行模拟，但是 post 请求就会报404错误。</p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2018/vue-json-mock-post/#more" class="more-link">READ MORE</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2017-3-9 17:16:19"><a href="/2017/node-mysql-beginner/">2017-03-09</a></time>
       
       
   
@@ -64,9 +100,9 @@
     <div class="entry">
       
         <p>突然想研究研究怎么用nodejs操作数据库，目前自己机器上刚好装了mysql，这个数据库我也比较熟悉，所以就找了些网上的教程跟着学习一下怎么操作。</p>
-<p>首先在项目目录里需要安装 node-mysql 模块：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install mysql</div></pre></td></tr></table></figure></p>
+<p>首先在项目目录里需要安装 node-mysql 模块：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install mysql</span><br></pre></td></tr></table></figure></p>
 <p>在mysql里创建一个测试数据库 <code>node_test</code>，然后建个测试用的数据表 <code>mytable</code> ：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">CREATE TABLE `node_test`.`mytable` ( </div><div class="line">    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY , </div><div class="line">    `firstname` VARCHAR( 20 ) NOT NULL , </div><div class="line">    `lastname` VARCHAR( 20 ) NOT NULL , </div><div class="line">    `message` TEXT NOT NULL</div><div class="line">) ENGINE = MYISAM ;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE `node_test`.`mytable` ( </span><br><span class="line">    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY , </span><br><span class="line">    `firstname` VARCHAR( 20 ) NOT NULL , </span><br><span class="line">    `lastname` VARCHAR( 20 ) NOT NULL , </span><br><span class="line">    `message` TEXT NOT NULL</span><br><span class="line">) ENGINE = MYISAM ;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer>
@@ -103,7 +139,7 @@
     <div class="entry">
       
         <p>用angular2开发项目时运行 <code>ng serve</code> ，控制台里一直有error报错：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Error in bail mode: [default] /Users/Virola/code/sites/ng2-app/src/app/app.component.ts:5:14 </div><div class="line">Cannot find name &apos;require&apos;.</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Error in bail mode: [default] /Users/Virola/code/sites/ng2-app/src/app/app.component.ts:5:14 </span><br><span class="line">Cannot find name &apos;require&apos;.</span><br></pre></td></tr></table></figure>
 <p>虽然一直不知道什么原因，但是因为并不影响开发环境的项目效果所以一直没有理会。</p>
 <p>但是到了项目发布的时候，运行 <code>ng build</code> ，这时候就不行了，因为会出现上面这个错误，一直无法部署编译成功。</p>
 <p>去网上搜了一下相关帖子，发现实际上是 <strong>typescript</strong> 编译出的问题。</p>
@@ -204,7 +240,7 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-03-30 15:13:09"><a href="/2015/centos-7-installation/">2015-03-30</a></time>
+        <time datetime="2015-3-30 15:13:09"><a href="/2015/centos-7-installation/">2015-03-30</a></time>
       
       
   
@@ -258,7 +294,7 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-03-26 18:59:45"><a href="/2015/qinghai/">2015-03-26</a></time>
+        <time datetime="2015-3-26 18:59:45"><a href="/2015/qinghai/">2015-03-26</a></time>
       
       
   
@@ -291,7 +327,7 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-03-26 15:59:45"><a href="/2015/hello-world/">2015-03-26</a></time>
+        <time datetime="2015-3-26 15:59:45"><a href="/2015/hello-world/">2015-03-26</a></time>
       
       
   
@@ -301,10 +337,10 @@
     </header>
     <div class="entry">
       
-        <p>感谢erik师父的推荐，用<a href="http://hexo.io" target="_blank" rel="external">hexo</a>这个小玩意，很快就搭建好了基于markdown写作的博客，终于可以抛弃纠结了多年苦于无替代工具的wordpress了啊。</p>
+        <p>感谢erik师父的推荐，用<a href="http://hexo.io" target="_blank" rel="noopener">hexo</a>这个小玩意，很快就搭建好了基于markdown写作的博客，终于可以抛弃纠结了多年苦于无替代工具的wordpress了啊。</p>
 <p>这东东不是所见即所得的，得在PC上搞 <code>hexo server</code> 才能看效果，文章写好了呢，还需要 <code>hexo generate</code> 生成网站，然后还要 <code>hexo deploy</code> 构建部署。 当然，也可以直接用 <code>hexo generate --deploy</code> 二合一命令完成后面两步的功能。</p>
 <p>不过现在还遗留问题就是，哪天要是想用手机写博客，可能就没法publish了。不过用手机在github上写博的概率应该很小吧，现在连手机打字都嫌累的说。<br>感觉这样管理起来自己的博客真是太容易了。</p>
-<p>接下来要研究研究怎么把<code>jsfiddler</code>之流整合进来。参考文档：<a href="http://hexo.io/docs/tag-plugins.html#jsFiddle" target="_blank" rel="external">http://hexo.io/docs/tag-plugins.html#jsFiddle</a></p>
+<p>接下来要研究研究怎么把<code>jsfiddler</code>之流整合进来。参考文档：<a href="http://hexo.io/docs/tag-plugins.html#jsFiddle" target="_blank" rel="noopener">http://hexo.io/docs/tag-plugins.html#jsFiddle</a></p>
 
       
     </div>
@@ -346,6 +382,8 @@
   
     <li><a href="/categories/whatever/">whatever</a><small>5</small></li>
   
+    <li><a href="/categories/前端/">前端</a><small>1</small></li>
+  
   </ul>
 </div>
 
@@ -366,6 +404,8 @@
     <li><a href="/tags/photo/">photo</a><small>1</small></li>
   
     <li><a href="/tags/travel/">travel</a><small>1</small></li>
+  
+    <li><a href="/tags/vue/">vue</a><small>1</small></li>
   
     <li><a href="/tags/whatever/">whatever</a><small>2</small></li>
   
@@ -389,7 +429,7 @@
     </p>
     <div class="alignleft">
   
-  &copy; 2017 Virola
+  &copy; 2018 Virola
   
 </div>
 <div class="clearfix"></div>
@@ -413,8 +453,8 @@
 $(function () {
   var topbtn = $('#return-top').hide();
   $(window).on('scroll', function () {
-    var scrollTop = $(document.body).scrollTop();
-    if (scrollTop > 100) {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 200) {
         topbtn.fadeIn();
     }
     else {
@@ -422,7 +462,7 @@ $(function () {
     }
   });
   topbtn.on('click', function () {
-      $(document.body).animate({
+      $('html,body').animate({
           'scrollTop': 0
       });
       return false;

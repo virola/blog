@@ -52,7 +52,7 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-03-30 15:13:09"><a href="/2015/centos-7-installation/">2015-03-30</a></time>
+        <time datetime="2015-3-30 15:13:09"><a href="/2015/centos-7-installation/">2015-03-30</a></time>
       
       
   
@@ -68,40 +68,40 @@
 <h3 id="关于镜像的问题"><a href="#关于镜像的问题" class="headerlink" title="关于镜像的问题"></a>关于镜像的问题</h3><p>受以前安装ubuntu的龟速软件下载的经验影响，我以为这个centos为了提速也一样会需要修改国内镜像之类的，还去改了网易的镜像地址。<br>结果好像镜像地址过期，搞的yum下载不了东东，只好改回原镜像。万万没想到，系统切换完语言重启之后，自动选择了国内的镜像地址（sina的），下载速度刚刚的。</p>
 <h3 id="关于虚拟机卡、慢、假死问题"><a href="#关于虚拟机卡、慢、假死问题" class="headerlink" title="关于虚拟机卡、慢、假死问题"></a>关于虚拟机卡、慢、假死问题</h3><p>觉得奇怪，给虚拟机分配了<strong>50G硬盘</strong>、<strong>2G内存</strong>、<strong>2个处理器</strong>，结果还是开几个程序就卡死，尤其是在安装程序的时候死得更频繁。<br>后来假死的时候切换出来调win的任务管理器发现，原来是硬盘I/O的处理速度跟不上。<br>vmware卡死的时候硬盘读写占用一直都是100%，遇到过几次这种情况，每次只能等啊等等到磁盘使用率过一段时间降下来之后，就能切换进虚拟机go on了。</p>
 <a id="more"></a>
-<h2 id="Google-Chrome"><a href="#Google-Chrome" class="headerlink" title="Google Chrome"></a>Google Chrome</h2><p>作为一个BD出品的FE，Chrome自然是心头爱，虽然centos自带firefox似乎也挺好用，但是chrome积累了好几年的config还是想同步过来。<br>安装chrome没有什么可说的，翻个墙去<a href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank" rel="external">官网</a>下载 rpm 版本的软件安装上就能用。</p>
-<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p>代码都存在github上，自然少不了git安装。Centos上安装git很简单，一句命令立马搞定。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo yum install git</div></pre></td></tr></table></figure></p>
-<p>可以再顺手装个<a href="https://github.com/nvie/gitflow/wiki/Installation" target="_blank" rel="external">gitflow</a>来增强git操作。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo yum install gitflow</div></pre></td></tr></table></figure></p>
+<h2 id="Google-Chrome"><a href="#Google-Chrome" class="headerlink" title="Google Chrome"></a>Google Chrome</h2><p>作为一个BD出品的FE，Chrome自然是心头爱，虽然centos自带firefox似乎也挺好用，但是chrome积累了好几年的config还是想同步过来。<br>安装chrome没有什么可说的，翻个墙去<a href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" target="_blank" rel="noopener">官网</a>下载 rpm 版本的软件安装上就能用。</p>
+<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p>代码都存在github上，自然少不了git安装。Centos上安装git很简单，一句命令立马搞定。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install git</span><br></pre></td></tr></table></figure></p>
+<p>可以再顺手装个<a href="https://github.com/nvie/gitflow/wiki/Installation" target="_blank" rel="noopener">gitflow</a>来增强git操作。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install gitflow</span><br></pre></td></tr></table></figure></p>
 <h2 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h2><p>因为安装centos的主要目的就是想在更好的工具环境里面写博客和建设网站，博客和网站的工具环境都是nodejs，所以装node自然不必说。</p>
 <ol>
-<li><a href="https://nodejs.org/" target="_blank" rel="external">官网</a>tar包下载好</li>
+<li><a href="https://nodejs.org/" target="_blank" rel="noopener">官网</a>tar包下载好</li>
 <li>解压出 node-v0.12.1 目录， cd node-v0.12.1</li>
-<li>运行命令 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">./configure</div><div class="line">sudo make</div><div class="line">sudo make install</div></pre></td></tr></table></figure>
+<li>运行命令 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./configure</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>这些方法在网上都能搜到，问题不大。</p>
 <h2 id="输入法和编辑器"><a href="#输入法和编辑器" class="headerlink" title="输入法和编辑器"></a>输入法和编辑器</h2><p>其实系统装好之后默认的拼音输入法是可以用的，虽然稍微有那么点点卡。但是，万万没想到，我们前端最中意的编辑器 sublime text 竟然不能输入中文。<br>去网上查相关资料，有说要安装google-pinyin的，然后我去尝试了，不知道什么原因没装上（yum里有记录但是语言输入源无法添加）。</p>
-<p>更有甚者，我搜出来这样一篇文章：<a href="http://www.csdn123.com/html/mycsdn20140110/61/61630f4872710aee1eb0dd860ff14f03.html" target="_blank" rel="external">中文竟然需要这样输入我也是醉了</a><br>这篇的办法是，安装一个 <code>inputhelper</code> 插件，每次需要输入中文的时候，按ctrl+shift+z，弹出一个输入框，在输入框中输入中文后，按enter将中文插入到编辑区域。<br>这方法简直是变态啊，让人不忍吐槽。</p>
+<p>更有甚者，我搜出来这样一篇文章：<a href="http://www.csdn123.com/html/mycsdn20140110/61/61630f4872710aee1eb0dd860ff14f03.html" target="_blank" rel="noopener">中文竟然需要这样输入我也是醉了</a><br>这篇的办法是，安装一个 <code>inputhelper</code> 插件，每次需要输入中文的时候，按ctrl+shift+z，弹出一个输入框，在输入框中输入中文后，按enter将中文插入到编辑区域。<br>这方法简直是变态啊，让人不忍吐槽。</p>
 <p>无奈之下，还是寻求其他更适合的编辑器吧。正好前阵子看到<atom.io>上有一款 <strong>atom</strong> 编辑器，抱着尝试一下的心情试用了。<br>实践证明，这款编辑器可以输入中文，而且配置起来和sublime一样方便，只有一个问题就是markdown语法的识别不是特别好，总的来说在linux上开发值得推荐。</atom.io></p>
-<p>对了，因为我的博客是基于<a href="http://hexo.io" target="_blank" rel="external">hexo</a>开发的，在atom上装了一个插件(markdown-writer)，看简介很厉害的样子，等我写几篇博试用一下先。</p>
+<p>对了，因为我的博客是基于<a href="http://hexo.io" target="_blank" rel="noopener">hexo</a>开发的，在atom上装了一个插件(markdown-writer)，看简介很厉害的样子，等我写几篇博试用一下先。</p>
 <p>贴一份我的Atom配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">welcome:</div><div class="line">  showOnStartup: false</div><div class="line">core:</div><div class="line">  themes: [</div><div class="line">    &quot;one-light-ui&quot;</div><div class="line">    &quot;one-dark-syntax&quot;</div><div class="line">  ]</div><div class="line">editor:</div><div class="line">  &apos;showInvisibles&apos;: true</div><div class="line">  &apos;showIndentGuide&apos;: true</div><div class="line">  invisibles: &#123;&#125;</div><div class="line">  fontFamily: &quot;Yahei Consolas Hybrid&quot;</div><div class="line">  fontSize: 18</div><div class="line">  tabLength: 4</div><div class="line">  softWrap: true</div><div class="line">  softWrapAtPreferredLineLength: true</div><div class="line">  preferredLineLength: 120</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">welcome:</span><br><span class="line">  showOnStartup: false</span><br><span class="line">core:</span><br><span class="line">  themes: [</span><br><span class="line">    &quot;one-light-ui&quot;</span><br><span class="line">    &quot;one-dark-syntax&quot;</span><br><span class="line">  ]</span><br><span class="line">editor:</span><br><span class="line">  &apos;showInvisibles&apos;: true</span><br><span class="line">  &apos;showIndentGuide&apos;: true</span><br><span class="line">  invisibles: &#123;&#125;</span><br><span class="line">  fontFamily: &quot;Yahei Consolas Hybrid&quot;</span><br><span class="line">  fontSize: 18</span><br><span class="line">  tabLength: 4</span><br><span class="line">  softWrap: true</span><br><span class="line">  softWrapAtPreferredLineLength: true</span><br><span class="line">  preferredLineLength: 120</span><br></pre></td></tr></table></figure>
 <h2 id="Nginx-PHP"><a href="#Nginx-PHP" class="headerlink" title="Nginx+PHP"></a>Nginx+PHP</h2><p>要搭建服务器必备工具。</p>
-<h3 id="EPEL-软件仓库"><a href="#EPEL-软件仓库" class="headerlink" title="EPEL 软件仓库"></a>EPEL 软件仓库</h3><p>EPEL（<a href="http://fedoraproject.org/wiki/EPEL）" target="_blank" rel="external">http://fedoraproject.org/wiki/EPEL）</a> 是由 Fedora 社区打造，为 RHEL 及衍生发行版如 CentOS、Scientific Linux 等提供高质量软件包的项目。装上了 EPEL，就像在 Fedora 上一样，可以通过 yum install package-name，随意安装软件。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm</div></pre></td></tr></table></figure>
-<p>可在下面链接里寻找:<a href="http://fedoraproject.org/wiki/EPEL/FAQ#howtouse" target="_blank" rel="external">http://fedoraproject.org/wiki/EPEL/FAQ#howtouse</a></p>
+<h3 id="EPEL-软件仓库"><a href="#EPEL-软件仓库" class="headerlink" title="EPEL 软件仓库"></a>EPEL 软件仓库</h3><p>EPEL（<a href="http://fedoraproject.org/wiki/EPEL）" target="_blank" rel="noopener">http://fedoraproject.org/wiki/EPEL）</a> 是由 Fedora 社区打造，为 RHEL 及衍生发行版如 CentOS、Scientific Linux 等提供高质量软件包的项目。装上了 EPEL，就像在 Fedora 上一样，可以通过 yum install package-name，随意安装软件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm</span><br></pre></td></tr></table></figure>
+<p>可在下面链接里寻找:<a href="http://fedoraproject.org/wiki/EPEL/FAQ#howtouse" target="_blank" rel="noopener">http://fedoraproject.org/wiki/EPEL/FAQ#howtouse</a></p>
 <p>安装完毕之后，即可使用 yum 来安装软件，比如 git：<code>yum install git</code> ,<br>若要查看 EPEL Repo 中是否存在某个软件包： <code>yum search package-name</code></p>
-<h3 id="安装nginx-php-mysql"><a href="#安装nginx-php-mysql" class="headerlink" title="安装nginx+php+mysql"></a>安装nginx+php+mysql</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yum -y install nginx mysql-server php-fpm php-cli php-pdo php-mysql php-mcrypt php-mbstring php-gd php-tidy php-xml php-xmlrpc php-pear php-pecl-memcache php-eaccelerator</div></pre></td></tr></table></figure>
+<h3 id="安装nginx-php-mysql"><a href="#安装nginx-php-mysql" class="headerlink" title="安装nginx+php+mysql"></a>安装nginx+php+mysql</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install nginx mysql-server php-fpm php-cli php-pdo php-mysql php-mcrypt php-mbstring php-gd php-tidy php-xml php-xmlrpc php-pear php-pecl-memcache php-eaccelerator</span><br></pre></td></tr></table></figure>
 <p>mysql-server这个包没装上= =</p>
-<h3 id="开机启动"><a href="#开机启动" class="headerlink" title="开机启动"></a>开机启动</h3><p>开机启动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">chkconfig --level 345 mysqld on  </div><div class="line">chkconfig --level 345 php-fpm on  </div><div class="line">chkconfig --level 345 nginx on</div></pre></td></tr></table></figure></p>
+<h3 id="开机启动"><a href="#开机启动" class="headerlink" title="开机启动"></a>开机启动</h3><p>开机启动<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chkconfig --level 345 mysqld on  </span><br><span class="line">chkconfig --level 345 php-fpm on  </span><br><span class="line">chkconfig --level 345 nginx on</span><br></pre></td></tr></table></figure></p>
 <h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><ul>
 <li>/etc/nginx/nginx.conf</li>
 <li>/etc/nginx/fastcgi_params</li>
 <li>/etc/php-fpm.conf</li>
 </ul>
 <h3 id="操作命令"><a href="#操作命令" class="headerlink" title="操作命令"></a>操作命令</h3><p>启动命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">nginx</div><div class="line">php-fpm</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nginx</span><br><span class="line">php-fpm</span><br></pre></td></tr></table></figure>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>git alias配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">git config --global alias.l   &quot;log --color --graph --decorate --pretty=oneline --abbrev-commit&quot;</div><div class="line">git config --global alias.l0  &quot;log --color --graph --decorate --pretty=oneline --abbrev-commit -U0&quot;</div><div class="line">git config --global alias.la  &quot;log --color --graph --decorate --pretty=oneline --abbrev-commit --all&quot;</div><div class="line">git config --global alias.lb  &quot;log --color --graph --decorate --pretty=oneline --abbrev-commit --all --simplify-by-decoration&quot;</div><div class="line">git config --global alias.lg  &quot;log --color --graph --decorate&quot;</div><div class="line">git config --global alias.dl   &quot;log --date-order --color --graph --decorate --pretty=oneline --abbrev-commit&quot;</div><div class="line">git config --global alias.dla  &quot;log --date-order --color --graph --decorate --pretty=oneline --abbrev-commit --all&quot;</div><div class="line">git config --global alias.dlb  &quot;log --date-order --color --graph --decorate --pretty=oneline --abbrev-commit --all --simplify-by-decoration&quot;</div><div class="line">git config --global alias.dlg  &quot;log --date-order --color --graph --decorate&quot;</div><div class="line">git config --global alias.d   &quot;diff --color&quot;</div><div class="line">git config --global alias.dc  &quot;diff --color --cached&quot;</div><div class="line">git config --global alias.d0  &quot;diff --color --unified=0&quot;</div><div class="line"></div><div class="line">git config --global alias.ci  &quot;commit --verbose&quot;</div><div class="line">git config --global alias.co  &quot;checkout&quot;</div><div class="line">git config --global alias.tr  &quot;checkout --track&quot;</div><div class="line">git config --global alias.s   &quot;status --short&quot;</div><div class="line">git config --global alias.st  &quot;status&quot;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.l   &quot;log --color --graph --decorate --pretty=oneline --abbrev-commit&quot;</span><br><span class="line">git config --global alias.l0  &quot;log --color --graph --decorate --pretty=oneline --abbrev-commit -U0&quot;</span><br><span class="line">git config --global alias.la  &quot;log --color --graph --decorate --pretty=oneline --abbrev-commit --all&quot;</span><br><span class="line">git config --global alias.lb  &quot;log --color --graph --decorate --pretty=oneline --abbrev-commit --all --simplify-by-decoration&quot;</span><br><span class="line">git config --global alias.lg  &quot;log --color --graph --decorate&quot;</span><br><span class="line">git config --global alias.dl   &quot;log --date-order --color --graph --decorate --pretty=oneline --abbrev-commit&quot;</span><br><span class="line">git config --global alias.dla  &quot;log --date-order --color --graph --decorate --pretty=oneline --abbrev-commit --all&quot;</span><br><span class="line">git config --global alias.dlb  &quot;log --date-order --color --graph --decorate --pretty=oneline --abbrev-commit --all --simplify-by-decoration&quot;</span><br><span class="line">git config --global alias.dlg  &quot;log --date-order --color --graph --decorate&quot;</span><br><span class="line">git config --global alias.d   &quot;diff --color&quot;</span><br><span class="line">git config --global alias.dc  &quot;diff --color --cached&quot;</span><br><span class="line">git config --global alias.d0  &quot;diff --color --unified=0&quot;</span><br><span class="line"></span><br><span class="line">git config --global alias.ci  &quot;commit --verbose&quot;</span><br><span class="line">git config --global alias.co  &quot;checkout&quot;</span><br><span class="line">git config --global alias.tr  &quot;checkout --track&quot;</span><br><span class="line">git config --global alias.s   &quot;status --short&quot;</span><br><span class="line">git config --global alias.st  &quot;status&quot;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -134,22 +134,7 @@
 
 
 <section id="comment">
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="2015/centos-7-installation/" data-title="centos 7 虚拟机安装记录" data-url="http://blog.zhuyuwei.cn/2015/centos-7-installation/"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"virola"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-<!-- 多说公共JS代码 end -->
+
 </section>
 
 </div></div>
@@ -172,6 +157,8 @@ var duoshuoQuery = {short_name:"virola"};
   
     <li><a href="/categories/whatever/">whatever</a><small>5</small></li>
   
+    <li><a href="/categories/前端/">前端</a><small>1</small></li>
+  
   </ul>
 </div>
 
@@ -192,6 +179,8 @@ var duoshuoQuery = {short_name:"virola"};
     <li><a href="/tags/photo/">photo</a><small>1</small></li>
   
     <li><a href="/tags/travel/">travel</a><small>1</small></li>
+  
+    <li><a href="/tags/vue/">vue</a><small>1</small></li>
   
     <li><a href="/tags/whatever/">whatever</a><small>2</small></li>
   
@@ -215,7 +204,7 @@ var duoshuoQuery = {short_name:"virola"};
     </p>
     <div class="alignleft">
   
-  &copy; 2017 Virola
+  &copy; 2018 Virola
   
 </div>
 <div class="clearfix"></div>
@@ -239,8 +228,8 @@ var duoshuoQuery = {short_name:"virola"};
 $(function () {
   var topbtn = $('#return-top').hide();
   $(window).on('scroll', function () {
-    var scrollTop = $(document.body).scrollTop();
-    if (scrollTop > 100) {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 200) {
         topbtn.fadeIn();
     }
     else {
@@ -248,7 +237,7 @@ $(function () {
     }
   });
   topbtn.on('click', function () {
-      $(document.body).animate({
+      $('html,body').animate({
           'scrollTop': 0
       });
       return false;

@@ -78,22 +78,7 @@
 
 
 <section id="comment">
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="about-me/index.html" data-title="About me" data-url="http://blog.zhuyuwei.cn/about-me/index.html"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"virola"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-<!-- 多说公共JS代码 end -->
+
 </section>
 
 </div></div>
@@ -116,6 +101,8 @@ var duoshuoQuery = {short_name:"virola"};
   
     <li><a href="/categories/whatever/">whatever</a><small>5</small></li>
   
+    <li><a href="/categories/前端/">前端</a><small>1</small></li>
+  
   </ul>
 </div>
 
@@ -136,6 +123,8 @@ var duoshuoQuery = {short_name:"virola"};
     <li><a href="/tags/photo/">photo</a><small>1</small></li>
   
     <li><a href="/tags/travel/">travel</a><small>1</small></li>
+  
+    <li><a href="/tags/vue/">vue</a><small>1</small></li>
   
     <li><a href="/tags/whatever/">whatever</a><small>2</small></li>
   
@@ -159,7 +148,7 @@ var duoshuoQuery = {short_name:"virola"};
     </p>
     <div class="alignleft">
   
-  &copy; 2017 Virola
+  &copy; 2018 Virola
   
 </div>
 <div class="clearfix"></div>
@@ -183,8 +172,8 @@ var duoshuoQuery = {short_name:"virola"};
 $(function () {
   var topbtn = $('#return-top').hide();
   $(window).on('scroll', function () {
-    var scrollTop = $(document.body).scrollTop();
-    if (scrollTop > 100) {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 200) {
         topbtn.fadeIn();
     }
     else {
@@ -192,7 +181,7 @@ $(function () {
     }
   });
   topbtn.on('click', function () {
-      $(document.body).animate({
+      $('html,body').animate({
           'scrollTop': 0
       });
       return false;

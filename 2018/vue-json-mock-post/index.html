@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | Virola&#39;s Blog</title>
+  <title>VUE(版本v2.5)模拟POST本地json的方法 | Virola&#39;s Blog</title>
   <meta name="author" content="Virola">
   
   <meta name="description" content="Virola&#39;s Blog">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-  <meta property="og:title" content="Hello World"/>
+  <meta property="og:title" content="VUE(版本v2.5)模拟POST本地json的方法"/>
   <meta property="og:site_name" content="Virola&#39;s Blog"/>
 
   
@@ -52,20 +52,28 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-3-26 15:59:45"><a href="/2015/hello-world/">2015-03-26</a></time>
+        <time datetime="2018-4-10 15:14:21"><a href="/2018/vue-json-mock-post/">2018-04-10</a></time>
       
       
   
-    <h1 class="title">Hello World</h1>
+    <h1 class="title">VUE(版本v2.5)模拟POST本地json的方法</h1>
   
 
     </header>
     <div class="entry">
       
-        <p>感谢erik师父的推荐，用<a href="http://hexo.io" target="_blank" rel="noopener">hexo</a>这个小玩意，很快就搭建好了基于markdown写作的博客，终于可以抛弃纠结了多年苦于无替代工具的wordpress了啊。</p>
-<p>这东东不是所见即所得的，得在PC上搞 <code>hexo server</code> 才能看效果，文章写好了呢，还需要 <code>hexo generate</code> 生成网站，然后还要 <code>hexo deploy</code> 构建部署。 当然，也可以直接用 <code>hexo generate --deploy</code> 二合一命令完成后面两步的功能。</p>
-<p>不过现在还遗留问题就是，哪天要是想用手机写博客，可能就没法publish了。不过用手机在github上写博的概率应该很小吧，现在连手机打字都嫌累的说。<br>感觉这样管理起来自己的博客真是太容易了。</p>
-<p>接下来要研究研究怎么把<code>jsfiddler</code>之流整合进来。参考文档：<a href="http://hexo.io/docs/tag-plugins.html#jsFiddle" target="_blank" rel="noopener">http://hexo.io/docs/tag-plugins.html#jsFiddle</a></p>
+        <p>最近在学习vue项目开发，由于纯练手没有开发后端，只能用本地模拟数据进行。<br>找了网上的一些 json mock 方法，发现 get 请求可以通过 proxyTable 进行模拟，但是 post 请求就会报404错误。</p>
+<a id="more"></a>
+<p>get 请求的配置可以用这个方法：</p>
+<ol>
+<li>在根目录新建 <code>static/mock/</code> 文件夹，将模拟数据 *.json 放在目录里；</li>
+<li>修改 config/index.js 文件，增加proxyTable配置<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">proxyTable: &#123;</span><br><span class="line">    <span class="comment">// 数据代理，将所有 api/get 开头的请求转发给本地mock目录</span></span><br><span class="line">    <span class="string">'/api/get'</span>: &#123;</span><br><span class="line">        target: <span class="string">'http://localhost:8080/static/mock'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这时候请求get就能访问到json文件（我项目中用了 <a href="https://github.com/axios/axios" target="_blank" rel="noopener">axios</a> ）：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 会转发请求到 http://localhost:8080/static/mock/user.json</span></span><br><span class="line">axios.get(<span class="string">'api/get/user.json'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>在网上找了一些文章，有写配置的也是比较旧版本的vuejs，新版本的配置文件不太一样了。<br>看了下 webpack devserver 的<a href="https://webpack.js.org/configuration/dev-server/" target="_blank" rel="noopener">文档</a>，里面有个属性 devServer.before 似乎可以实现mock。<br>然后研究了下项目结构，发现devserver使用的配置是 <code>build/webpack.dev.conf.js</code>，而这个配置文件只使用了 <code>config/index.js</code> 中的部分配置，所以要使用 <code>devServer.before</code> 这个属性必须要修改 <code>build/webpack.dev.conf.js</code> 文件：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在devServer的属性中添加</span></span><br><span class="line"><span class="comment">// ...其他属性</span></span><br><span class="line">before (app) &#123;</span><br><span class="line">    app.post(<span class="string">'/api/post/login'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 这里也可以用import一个数据文件，但修改文件内容时也需要重启server才能生效</span></span><br><span class="line">        res.json(&#123;</span><br><span class="line">            status: <span class="string">'ok'</span>,</span><br><span class="line">            data: &#123;&#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;,</span><br><span class="line"><span class="comment">// ...其他属性</span></span><br></pre></td></tr></table></figure>
+<p>重启 server ，使用 post json生效<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">axios.post(<span class="string">'api/post/login'</span>, &#123;<span class="attr">username</span>: <span class="string">'username'</span>, <span class="attr">password</span>: <span class="string">'pwd123'</span>&#125;);</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -74,13 +82,13 @@
         
   
   <div class="categories">
-    <a href="/categories/whatever/">whatever</a>
+    <a href="/categories/前端/">前端</a>
   </div>
 
         
   
   <div class="tags">
-    <a href="/tags/whatever/">whatever</a>
+    <a href="/tags/vue/">vue</a>
   </div>
 
 
