@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://www.zhuyuwei.cn/2018/seo-for-hexo.html</loc>
-    <lastmod>2018-04-12T04:11:24.037Z</lastmod>
+    <lastmod>2018-04-12T05:29:09.272Z</lastmod>
     <data>
         <display>
         <title>为HEXO博客做搜索引擎优化</title>
@@ -107,19 +107,21 @@
 
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2016/typescript-require-error.html</loc>
+    <loc>http://www.zhuyuwei.cn/2015/qinghai.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
         <display>
-        <title>angular2开发及typescript编译时总是报错 Cannot find name 'require'.</title>
-        <pubTime>2016-10-22T08:44:53.000Z</pubTime>
+        <title>青海</title>
+        <pubTime>2015-03-26T10:59:45.000Z</pubTime>
         
-        <tag>angular</tag>
+        <tag>photo</tag>
+         
+        <tag>travel</tag>
          
          
            
              
-              <breadCrumb title="tips" url="http://www.zhuyuwei.cn/categories/tips/"/>
+              <breadCrumb title="photo" url="http://www.zhuyuwei.cn/categories/photo/"/>
           
         </display>
     </data>
@@ -147,28 +149,6 @@
 
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2015/qinghai.html</loc>
-    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>青海</title>
-        <pubTime>2015-03-26T10:59:45.000Z</pubTime>
-        
-        <tag>photo</tag>
-         
-        <tag>travel</tag>
-         
-         
-           
-             
-              <breadCrumb title="photo" url="http://www.zhuyuwei.cn/categories/photo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.zhuyuwei.cn/2016/es6-beginner.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
@@ -182,6 +162,26 @@
            
              
               <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.zhuyuwei.cn/2016/typescript-require-error.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>angular2开发及typescript编译时总是报错 Cannot find name 'require'.</title>
+        <pubTime>2016-10-22T08:44:53.000Z</pubTime>
+        
+        <tag>angular</tag>
+         
+         
+           
+             
+              <breadCrumb title="tips" url="http://www.zhuyuwei.cn/categories/tips/"/>
           
         </display>
     </data>
