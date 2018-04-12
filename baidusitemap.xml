@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>http://blog.zhuyuwei.cn/2018/seo-for-hexo.html</loc>
+    <lastmod>2018-04-12T04:11:24.037Z</lastmod>
+    <data>
+        <display>
+        <title>为HEXO博客做搜索引擎优化</title>
+        <pubTime>2018-04-12T03:11:31.000Z</pubTime>
+        
+        <tag>whatever</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://blog.zhuyuwei.cn/categories/whatever/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.zhuyuwei.cn/2018/vue-meta-for-vuejs.html</loc>
+    <lastmod>2018-04-12T03:20:08.905Z</lastmod>
+    <data>
+        <display>
+        <title>在vuejs项目中使用vue-meta管理HTML head信息</title>
+        <pubTime>2018-04-12T01:57:00.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://blog.zhuyuwei.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.zhuyuwei.cn/2018/vue-json-mock-post.html</loc>
+    <lastmod>2018-04-10T09:13:48.063Z</lastmod>
+    <data>
+        <display>
+        <title>VUE(版本v2.5)模拟POST本地json的方法</title>
+        <pubTime>2018-04-10T07:14:21.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://blog.zhuyuwei.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.zhuyuwei.cn/2017/node-mysql-beginner.html</loc>
+    <lastmod>2017-03-09T11:15:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>node操作mysql数据库学习</title>
+        <pubTime>2017-03-09T09:16:19.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>mysql</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://blog.zhuyuwei.cn/categories/whatever/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://blog.zhuyuwei.cn/2016/es6-beginner.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>ES6初学者</title>
+        <pubTime>2016-10-19T18:26:19.000Z</pubTime>
+        
+        <tag>whatever</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://blog.zhuyuwei.cn/categories/whatever/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.zhuyuwei.cn/2016/typescript-require-error.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>angular2开发及typescript编译时总是报错 Cannot find name 'require'.</title>
+        <pubTime>2016-10-22T08:44:53.000Z</pubTime>
+        
+        <tag>angular</tag>
+         
+         
+           
+             
+              <breadCrumb title="tips" url="http://blog.zhuyuwei.cn/categories/tips/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.zhuyuwei.cn/2016/react-or-angular.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>react or angular ?</title>
+        <pubTime>2016-10-22T06:16:18.000Z</pubTime>
+        
+        <tag>发发牢骚</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://blog.zhuyuwei.cn/categories/whatever/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.zhuyuwei.cn/2015/qinghai.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>青海</title>
+        <pubTime>2015-03-26T10:59:45.000Z</pubTime>
+        
+        <tag>photo</tag>
+         
+        <tag>travel</tag>
+         
+         
+           
+             
+              <breadCrumb title="photo" url="http://blog.zhuyuwei.cn/categories/photo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.zhuyuwei.cn/2015/hello-world.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2015-03-26T07:59:45.000Z</pubTime>
+        
+        <tag>whatever</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://blog.zhuyuwei.cn/categories/whatever/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.zhuyuwei.cn/2015/centos-7-installation.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>centos 7 虚拟机安装记录</title>
+        <pubTime>2015-03-30T07:13:09.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://blog.zhuyuwei.cn/categories/whatever/"/>
+          
+        </display>
+    </data>
+    </url>
+
+</urlset>
