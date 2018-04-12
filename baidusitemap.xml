@@ -87,14 +87,14 @@
     
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2016/es6-beginner.html</loc>
+    <loc>http://www.zhuyuwei.cn/2015/centos-7-installation.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
         <display>
-        <title>ES6初学者</title>
-        <pubTime>2016-10-19T18:26:19.000Z</pubTime>
+        <title>centos 7 虚拟机安装记录</title>
+        <pubTime>2015-03-30T07:13:09.000Z</pubTime>
         
-        <tag>whatever</tag>
+        <tag>linux</tag>
          
          
            
@@ -169,14 +169,14 @@
 
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2015/centos-7-installation.html</loc>
+    <loc>http://www.zhuyuwei.cn/2016/es6-beginner.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
         <display>
-        <title>centos 7 虚拟机安装记录</title>
-        <pubTime>2015-03-30T07:13:09.000Z</pubTime>
+        <title>ES6初学者</title>
+        <pubTime>2016-10-19T18:26:19.000Z</pubTime>
         
-        <tag>linux</tag>
+        <tag>whatever</tag>
          
          
            
