@@ -1,3 +1,4 @@
+http://www.zhuyuwei.cn/2018/vue-cli-css-prefixer.html
 http://www.zhuyuwei.cn/2018/seo-for-hexo.html
 http://www.zhuyuwei.cn/2018/vue-meta-for-vuejs.html
 http://www.zhuyuwei.cn/2018/vue-json-mock-post.html
@@ -7,4 +8,3 @@ http://www.zhuyuwei.cn/2016/react-or-angular.html
 http://www.zhuyuwei.cn/2016/es6-beginner.html
 http://www.zhuyuwei.cn/2015/centos-7-installation.html
 http://www.zhuyuwei.cn/2015/qinghai.html
-http://www.zhuyuwei.cn/2015/hello-world.html

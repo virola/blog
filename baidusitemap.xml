@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.zhuyuwei.cn/2018/vue-cli-css-prefixer.html</loc>
+    <lastmod>2018-04-19T06:49:44.504Z</lastmod>
+    <data>
+        <display>
+        <title>vue-cli build打包后CSS浏览器兼容前缀自动去除的问题</title>
+        <pubTime>2018-04-19T06:19:32.000Z</pubTime>
+        
+        <tag>vue</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://www.zhuyuwei.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.zhuyuwei.cn/2018/seo-for-hexo.html</loc>
     <lastmod>2018-04-12T05:42:08.496Z</lastmod>
     <data>
@@ -87,14 +107,14 @@
     
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2016/es6-beginner.html</loc>
+    <loc>http://www.zhuyuwei.cn/2015/centos-7-installation.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
         <display>
-        <title>ES6初学者</title>
-        <pubTime>2016-10-19T18:26:19.000Z</pubTime>
+        <title>centos 7 虚拟机安装记录</title>
+        <pubTime>2015-03-30T07:13:09.000Z</pubTime>
         
-        <tag>whatever</tag>
+        <tag>linux</tag>
          
          
            
@@ -107,14 +127,14 @@
 
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2015/hello-world.html</loc>
+    <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
         <display>
-        <title>Hello World</title>
-        <pubTime>2015-03-26T07:59:45.000Z</pubTime>
+        <title>react or angular ?</title>
+        <pubTime>2016-10-22T06:16:18.000Z</pubTime>
         
-        <tag>whatever</tag>
+        <tag>发发牢骚</tag>
          
          
            
@@ -147,26 +167,6 @@
 
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2015/centos-7-installation.html</loc>
-    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>centos 7 虚拟机安装记录</title>
-        <pubTime>2015-03-30T07:13:09.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.zhuyuwei.cn/2015/qinghai.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
@@ -189,14 +189,34 @@
 
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
+    <loc>http://www.zhuyuwei.cn/2015/hello-world.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
         <display>
-        <title>react or angular ?</title>
-        <pubTime>2016-10-22T06:16:18.000Z</pubTime>
+        <title>Hello World</title>
+        <pubTime>2015-03-26T07:59:45.000Z</pubTime>
         
-        <tag>发发牢骚</tag>
+        <tag>whatever</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.zhuyuwei.cn/2016/es6-beginner.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>ES6初学者</title>
+        <pubTime>2016-10-19T18:26:19.000Z</pubTime>
+        
+        <tag>whatever</tag>
          
          
            
