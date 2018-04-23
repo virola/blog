@@ -36,7 +36,7 @@ vue-cli生成的项目默认支持部分移动端浏览器和最新版本的PC�
 
 
 在 **package.json** 中修改 `browserslist` ：
-```
+```json
 "browserslist": [
   "> 1%",
   "last 2 versions",
