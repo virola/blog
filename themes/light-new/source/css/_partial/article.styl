@@ -127,6 +127,13 @@ article
     line-height 2
     p, blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
       margin-top 15px
+    a 
+      &:not(.btn)
+        border-bottom: 1px solid rgba(204, 142, 4, 0.25)
+        padding-bottom: 1px
+        &:hover 
+          border-bottom: 1px solid color-link-focus
+          text-decoration: none
 
     blockquote
       border-top 1px solid color-border
@@ -152,13 +159,18 @@ article
       font-family font-mono
 
     code
-      background #f8f8f8
-      color #666
-      padding 0 5px
-      margin 0 2px
-      font-size 0.9em
+      // background #f8f8f8
+      // color #666
+      // padding 0 5px
+      // margin 0 5px
+      // font-size 0.9em
       border 1px solid color-border
       border-radius 3px
+      padding: 2px 4px
+      font-size: 90%
+      color: #c7254e
+      background-color: #f9f2f4
+      border-radius: 4px
 
     em
       -webkit-text-emphasis: filled circle

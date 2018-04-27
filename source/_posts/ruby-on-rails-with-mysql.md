@@ -53,4 +53,5 @@ production:
 rake db:create
 ```
 
+执行数据库命令后一定要重启服务器，否则直接访问会报错。
 

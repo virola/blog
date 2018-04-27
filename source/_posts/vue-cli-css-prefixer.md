@@ -27,7 +27,7 @@ a {
 }
 ```
 
-autoprefixer 使用了 browserslist 作为依赖。在项目目录中运行:
+autoprefixer 使用了 [browserslist](https://github.com/browserslist/browserslist) 作为依赖。在项目目录中运行:
 ```
 npx browserslist
 ```
