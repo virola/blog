@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://www.zhuyuwei.cn/2018/mina-setup-for-ruby-on-rails.html</loc>
-    <lastmod>2018-04-27T07:29:08.152Z</lastmod>
+    <lastmod>2018-04-27T13:34:24.963Z</lastmod>
     <data>
         <display>
         <title>Ruby on rails 自动部署工具 Mina 配置</title>
@@ -149,21 +149,39 @@
     
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2015/qinghai.html</loc>
+    <loc>http://www.zhuyuwei.cn/2015/centos-7-installation.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
         <display>
-        <title>青海</title>
-        <pubTime>2015-03-26T10:59:45.000Z</pubTime>
+        <title>centos 7 虚拟机安装记录</title>
+        <pubTime>2015-03-30T07:13:09.000Z</pubTime>
         
-        <tag>photo</tag>
-         
-        <tag>travel</tag>
+        <tag>linux</tag>
          
          
            
              
-              <breadCrumb title="photo" url="http://www.zhuyuwei.cn/categories/photo/"/>
+              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>react or angular ?</title>
+        <pubTime>2016-10-22T06:16:18.000Z</pubTime>
+        
+        <tag>发发牢骚</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
           
         </display>
     </data>
@@ -191,19 +209,21 @@
 
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2015/centos-7-installation.html</loc>
+    <loc>http://www.zhuyuwei.cn/2015/qinghai.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
         <display>
-        <title>centos 7 虚拟机安装记录</title>
-        <pubTime>2015-03-30T07:13:09.000Z</pubTime>
+        <title>青海</title>
+        <pubTime>2015-03-26T10:59:45.000Z</pubTime>
         
-        <tag>linux</tag>
+        <tag>photo</tag>
+         
+        <tag>travel</tag>
          
          
            
              
-              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
+              <breadCrumb title="photo" url="http://www.zhuyuwei.cn/categories/photo/"/>
           
         </display>
     </data>
@@ -239,26 +259,6 @@
         <pubTime>2016-10-19T18:26:19.000Z</pubTime>
         
         <tag>whatever</tag>
-         
-         
-           
-             
-              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
-    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>react or angular ?</title>
-        <pubTime>2016-10-22T06:16:18.000Z</pubTime>
-        
-        <tag>发发牢骚</tag>
          
          
            
