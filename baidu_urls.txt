@@ -1,3 +1,4 @@
+http://www.zhuyuwei.cn/2018/ruby-on-rails-user-token.html
 http://www.zhuyuwei.cn/2018/mina-setup-for-ruby-on-rails.html
 http://www.zhuyuwei.cn/2018/ruby-on-rails-with-mysql.html
 http://www.zhuyuwei.cn/2018/vue-cli-css-prefixer.html
@@ -7,4 +8,3 @@ http://www.zhuyuwei.cn/2018/vue-json-mock-post.html
 http://www.zhuyuwei.cn/2017/node-mysql-beginner.html
 http://www.zhuyuwei.cn/2016/typescript-require-error.html
 http://www.zhuyuwei.cn/2016/react-or-angular.html
-http://www.zhuyuwei.cn/2016/es6-beginner.html

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.zhuyuwei.cn/2018/ruby-on-rails-user-token.html</loc>
+    
+    <lastmod>2018-05-11T08:03:02.703Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.zhuyuwei.cn/2018/mina-setup-for-ruby-on-rails.html</loc>
     
     <lastmod>2018-04-27T13:34:24.963Z</lastmod>
@@ -65,14 +72,14 @@
   </url>
   
   <url>
-    <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
+    <loc>http://www.zhuyuwei.cn/2016/typescript-require-error.html</loc>
     
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.zhuyuwei.cn/2016/typescript-require-error.html</loc>
+    <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
     
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     

@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://www.zhuyuwei.cn/2018/ruby-on-rails-user-token.html</loc>
+    <lastmod>2018-05-11T08:03:02.703Z</lastmod>
+    <data>
+        <display>
+        <title>ruby on rails使用HTTP认证token实现用户登录验证和会话保持</title>
+        <pubTime>2018-05-10T15:48:51.000Z</pubTime>
+        
+        <tag>ruby on rails</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://www.zhuyuwei.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.zhuyuwei.cn/2018/mina-setup-for-ruby-on-rails.html</loc>
     <lastmod>2018-04-27T13:34:24.963Z</lastmod>
     <data>
@@ -133,9 +153,9 @@
         <title>node操作mysql数据库学习</title>
         <pubTime>2017-03-09T09:16:19.000Z</pubTime>
         
-        <tag>mysql</tag>
-         
         <tag>node</tag>
+         
+        <tag>mysql</tag>
          
          
            
@@ -169,26 +189,6 @@
 
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
-    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>react or angular ?</title>
-        <pubTime>2016-10-22T06:16:18.000Z</pubTime>
-        
-        <tag>发发牢骚</tag>
-         
-         
-           
-             
-              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.zhuyuwei.cn/2016/typescript-require-error.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
@@ -202,6 +202,26 @@
            
              
               <breadCrumb title="tips" url="http://www.zhuyuwei.cn/categories/tips/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>react or angular ?</title>
+        <pubTime>2016-10-22T06:16:18.000Z</pubTime>
+        
+        <tag>发发牢骚</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
           
         </display>
     </data>
