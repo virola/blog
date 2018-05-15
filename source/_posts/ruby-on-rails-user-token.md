@@ -10,6 +10,8 @@ category:
 
 认证的过程是这样的: 用户把用户名和密码通过 HTTP POST 请求发送到我们的 API (在这里我们使用 sessions 端点来处理这个请求), 如果用户名和密码匹配，我们会把 `token` 发送给用户。 这个 token 就是用来证明用户身份的凭证。然后在以后的每个请求中，我们都通过这个 token 来查找用户，如果没有找到用户则返回 401 错误。
 
+<!-- more -->
+
 ### 给 Member 模型增加 authentication_token 属性
 
 ```shell

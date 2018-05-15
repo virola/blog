@@ -10,7 +10,7 @@ category:
 
 登录百度站长平台：http://zhanzhang.baidu.com ,只要有百度旗下的账号就可以登录，登录成功之后在站点管理中点击添加网站然后输入你的站点地址。
 
-添加CNAME验证比较快速方便。
+文件验证比较快速，Google的webmaster也用了文件验证的方式。
 
 <!-- more -->
 ## 生成sitemap
