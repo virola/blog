@@ -4,14 +4,56 @@
 
     
   <url>
+    <loc>http://www.zhuyuwei.cn/2018/seo-for-hexo.html</loc>
+    <lastmod>2018-05-15T11:39:32.871Z</lastmod>
+    <data>
+        <display>
+        <title>为HEXO博客做搜索引擎优化</title>
+        <pubTime>2018-04-12T03:11:31.000Z</pubTime>
+        
+        <tag>whatever</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.zhuyuwei.cn/2018/ruby-on-rails-user-token.html</loc>
-    <lastmod>2018-05-11T08:03:02.703Z</lastmod>
+    <lastmod>2018-05-15T11:38:11.962Z</lastmod>
     <data>
         <display>
         <title>ruby on rails使用HTTP认证token实现用户登录验证和会话保持</title>
         <pubTime>2018-05-10T15:48:51.000Z</pubTime>
         
         <tag>ruby on rails</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="http://www.zhuyuwei.cn/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.zhuyuwei.cn/2018/scripts-grab-images.html</loc>
+    <lastmod>2018-05-15T11:34:32.295Z</lastmod>
+    <data>
+        <display>
+        <title>自己写了个抓取网页图片的脚本（phantomjs和shell）</title>
+        <pubTime>2018-05-15T10:53:31.000Z</pubTime>
+        
+        <tag>phantomjs</tag>
+         
+        <tag>shell</tag>
          
          
            
@@ -86,26 +128,6 @@
 
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2018/seo-for-hexo.html</loc>
-    <lastmod>2018-04-12T05:42:08.496Z</lastmod>
-    <data>
-        <display>
-        <title>为HEXO博客做搜索引擎优化</title>
-        <pubTime>2018-04-12T03:11:31.000Z</pubTime>
-        
-        <tag>whatever</tag>
-         
-         
-           
-             
-              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.zhuyuwei.cn/2018/vue-meta-for-vuejs.html</loc>
     <lastmod>2018-04-12T03:20:08.905Z</lastmod>
     <data>
@@ -169,26 +191,6 @@
     
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2015/centos-7-installation.html</loc>
-    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
-    <data>
-        <display>
-        <title>centos 7 虚拟机安装记录</title>
-        <pubTime>2015-03-30T07:13:09.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-         
-           
-             
-              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.zhuyuwei.cn/2016/typescript-require-error.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
@@ -202,6 +204,26 @@
            
              
               <breadCrumb title="tips" url="http://www.zhuyuwei.cn/categories/tips/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.zhuyuwei.cn/2016/es6-beginner.html</loc>
+    <lastmod>2016-10-22T10:25:19.000Z</lastmod>
+    <data>
+        <display>
+        <title>ES6初学者</title>
+        <pubTime>2016-10-19T18:26:19.000Z</pubTime>
+        
+        <tag>whatever</tag>
+         
+         
+           
+             
+              <breadCrumb title="whatever" url="http://www.zhuyuwei.cn/categories/whatever/"/>
           
         </display>
     </data>
@@ -271,14 +293,14 @@
 
     
   <url>
-    <loc>http://www.zhuyuwei.cn/2016/es6-beginner.html</loc>
+    <loc>http://www.zhuyuwei.cn/2015/centos-7-installation.html</loc>
     <lastmod>2016-10-22T10:25:19.000Z</lastmod>
     <data>
         <display>
-        <title>ES6初学者</title>
-        <pubTime>2016-10-19T18:26:19.000Z</pubTime>
+        <title>centos 7 虚拟机安装记录</title>
+        <pubTime>2015-03-30T07:13:09.000Z</pubTime>
         
-        <tag>whatever</tag>
+        <tag>linux</tag>
          
          
            
