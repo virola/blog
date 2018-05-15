@@ -48,8 +48,6 @@ if (system.args.length < 2 || system.args.length > 4) {
           var imgReg = /<img.*?(?:>|\/>)/gi;
           // 匹配src属性
           var srcReg = /src=[\'\"]?([^\'\"]*)[\'\"]?/i;
-          // 排除base64
-          // var base64Reg = ;
           var arr = html.match(imgReg);
           
           for (var i = 0; i < arr.length; i++) {
