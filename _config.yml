@@ -8,7 +8,7 @@ subtitle: For love & freedom. 爱与自由。
 description: Virola's Blog
 author: Virola
 language: zh-CN
-timezone: 
+timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -67,10 +67,6 @@ theme: light-new
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-- type: git
-  repo: git@github.com:virola/blog.git
-  branch: deploy
-  message: build my website
 - type: baidu_url_submitter
 
 # baidu sitemap submit
@@ -80,7 +76,7 @@ baidu_url_submit:
   token: Z9OwI6YaFcRnfN1G # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
   path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
 
-baidu_site_verification: 
+baidu_site_verification:
   enable: true
   code: e5EBCWO83G
 
