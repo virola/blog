@@ -11,7 +11,8 @@ install:
 addons:
   ssh_known_hosts: 23.106.137.248:28787
 script:
-- npm run build && rsync -az -vv -e 'ssh -p 28787 -o stricthostkeychecking=no' public/ root@23.106.137.248:/home/wwwroot/blog.zhuyuwei.cn
+- npm run build && rsync -az -vv -e 'ssh -p 28787 -o stricthostkeychecking=no' public/
+  root@23.106.137.248:/home/wwwroot/blog.zhuyuwei.cn
 before_install:
 - openssl aes-256-cbc -K $encrypted_31d56be8cb94_key -iv $encrypted_31d56be8cb94_iv
   -in travis.enc -out travis -d
