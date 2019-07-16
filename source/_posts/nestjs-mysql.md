@@ -55,40 +55,43 @@ export class ApplicationModule {}
 
 mysql数据库的连接方式在前面已经说明，这里不赘述。
 
-设定数据库中已存在消息表 `message`，需要程序中对应定义一个 `messages.entity.ts` 。
+设定数据库中已存在消息表 `message`，需要程序中对应定义一个 `message.entity.ts` 。
 
-Ps. nest.js中命名多用**名词复数**。
+Ps. nest.js中，数据库实体命名用**名词单数**，service、controller、module的命名用**名词复数**。
 
 ```js
-// messages/messages.entity.ts
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+// messages/message.entity.ts
+import { Column, Entity, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
 
+// 这里可以修改表名
+// @Entity('messages')
 @Entity()
-export class Messages {
+export class Message extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column('int')
-  user_id: number;
+  @Column('int', { name: 'user_id' })
+  userId: number;
 
-  @Column('text')
+  @Column('text', { name: 'content' })
   content: string;
 
-  @Column('int')
-  to_user_id: number;
+  @Column('int', { name: 'to_user_id' })
+  toUserId: number;
 
-  @Column('datetime')
-  created_time: Date;
+  @Column('datetime', { name: 'created_time' })
+  createdTime: Date;
 
   @Column('int')
   creator: number;
 
-  @Column('datetime')
-  updated_time: Date;
+  @Column('datetime', { name: 'updated_time' })
+  updatedTime: Date;
 
   @Column('int')
   updator: number;
 }
+
 
 ```
 
@@ -106,18 +109,18 @@ import { Message } from './interfaces/message.interface';
 // ORM
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Messages } from './messages.entity';
+import { Message } from './message.entity';
 
 @Injectable()
 export class MessagesService {
   constructor(
-    @InjectRepository(Messages)
-    private readonly messagesRepository: Repository<Messages>,
+    @InjectRepository(Message)
+    private readonly messagesRepository: Repository<Message>,
   ) { }
 
   private readonly messages: Message[] = [];
 
-  async findAll(): Promise<Messages[]> {
+  async findAll(): Promise<Message[]> {
     return await this.messagesRepository.find();
   }
 }
@@ -131,14 +134,14 @@ export class MessagesService {
 ```js
 import { Controller, Get } from '@nestjs/common';
 import { MessagesService } from './messages.service';
-import { Messages } from './messages.entity';
+import { Message } from './message.entity';
 
 @Controller('messages')
 export class MessagesController {
   constructor(private readonly messagesService: MessagesService) { }
 
   @Get()
-  findAll(): Promise<Messages[]> {
+  findAll(): Promise<Message[]> {
     return this.messagesService.findAll();
   }
 }
@@ -155,10 +158,10 @@ import { MessagesService } from './messages.service';
 import { MessagesController } from './messages.controller';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Messages } from './messages.entity';
+import { Message } from './message.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Messages])],
+  imports: [TypeOrmModule.forFeature([Message])],
   providers: [MessagesService],
   controllers: [MessagesController]
 })
@@ -207,7 +210,7 @@ export class AppModule {
 import { Column, Entity, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
 
 @Entity()
-export class Messages extends BaseEntity {
+export class Message extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -239,21 +242,21 @@ export class Messages extends BaseEntity {
 
 ```js
 import { Injectable } from '@nestjs/common';
-import { Messages } from './messages.entity';
+import { Message } from './message.entity';
 
 @Injectable()
 export class MessagesService {
 
-  async save(): Promise<Messages> {
-    const message = new Messages();
+  async save(): Promise<Message> {
+    const message = new Message();
     message.user_id = Math.round(Math.random() * 1000);
     message.to_user_id = Math.round(Math.random() * 1000);
     message.content = '消息内容';
     return await message.save();
   }
 
-  async findAll(): Promise<Messages[]> {
-    return await Messages.find();
+  async findAll(): Promise<Message[]> {
+    return await Message.find();
   }
 }
 
