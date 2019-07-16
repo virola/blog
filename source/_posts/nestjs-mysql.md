@@ -193,3 +193,83 @@ export class AppModule {
 ```
 
 以上步骤全部定义好之后，因为controller中加入了路由，所以这时访问： <http://localhost:3000/messages> 会看到所有数据表中的数据已经按列表形式输出JSON了。
+
+
+## ActiveRecord 模式的数据模型
+
+使用 ActiveRecord 模式的数据模型来写，代码可以更简洁一点。
+
+### entity定义
+
+继承 `BaseEntity` 基础类。
+
+```js
+import { Column, Entity, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
+
+@Entity()
+export class Messages extends BaseEntity {
+  @PrimaryGeneratedColumn()
+  id: number;
+
+  @Column('int')
+  user_id: number;
+
+  @Column('text')
+  content: string;
+
+  @Column('int')
+  to_user_id: number;
+
+  @Column('datetime')
+  created_time: Date;
+
+  @Column('int')
+  creator: number;
+
+  @Column('datetime')
+  updated_time: Date;
+
+  @Column('int')
+  updator: number;
+}
+
+```
+
+### 定义service
+
+```js
+import { Injectable } from '@nestjs/common';
+import { Messages } from './messages.entity';
+
+@Injectable()
+export class MessagesService {
+
+  async save(): Promise<Messages> {
+    const message = new Messages();
+    message.user_id = Math.round(Math.random() * 1000);
+    message.to_user_id = Math.round(Math.random() * 1000);
+    message.content = '消息内容';
+    return await message.save();
+  }
+
+  async findAll(): Promise<Messages[]> {
+    return await Messages.find();
+  }
+}
+
+```
+
+
+## 测试POST请求
+
+GET请求可以直接在浏览器中打开看效果，POST请求就要利用工具实现模拟调用了。
+
+```bash
+curl -X POST --data "" http://localhost:3000/messages
+```
+
+curl默认以 `application/x-www-form-urlencoded` 作为 `Content-Type` 来发送数据。如果想要用JSON格式发送数据，那么可以通过 -H 参数来修改 Content-Type 。
+
+```bash
+curl -H "Content-Type:application/json" -X POST --data '{"user_id": 3000, "to_user_id": 4000, "content": "xxxyyyzzz"}' http://localhost:3000/messages
+```
