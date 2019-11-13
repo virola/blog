@@ -45,7 +45,7 @@ cat travis.pub >> ~/.ssh/authorized_keys    # 将公钥添加到服务器认证�
 
 ```
 gem install travis
-travis login                        # github 帐号和密码，token 我没登录上
+travis login --pro                       # github 帐号和密码，token 我没登录上
 travis encrypt-file travis  --add   # 加密 travis 私钥，--add 会自动将解密命令添加到 .travis.yml
 ```
 
