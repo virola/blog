@@ -4,6 +4,28 @@ tags:
 category:
 ---
 
+## 一些操作更新by 2019.11.13
+
+首先需要机器上安装 ruby & gem :
+```
+yum install ruby ruby-devel
+
+gem update --system
+gem -v
+```
+
+也可以使用RVM管理ruby安装：<https://rvm.io/>
+```
+curl -sSL https://get.rvm.io | bash -s stable
+```
+
+国内vps切换rubygems为[ruby-china镜像](https://gems.ruby-china.com/)：
+```
+gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+gem sources -l
+```
+
+
 ## 一、配置github项目
 
 在github项目里新增 `.travis.yml` 文件。
