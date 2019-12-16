@@ -4,7 +4,7 @@ tags:
 - mac
 category: 
 - 前端
-
+---
 
 mac安装jenkins真是遇到了大坑，jenkins官方pkg下载下来，安装后默认jenkins home主目录不能修改，然后各种报没有权限。本来安装就花了半天的时间去准备环境，最后还是不得不忍痛卸载官方jenkins，使用 brew install jenkins 来解决问题。结果等 brew install 同样等了俩小时。
 
@@ -12,6 +12,8 @@ mac安装jenkins真是遇到了大坑，jenkins官方pkg下载下来，安装后
 ```
 /Library/Application Support/Jenkins/Uninstall.command
 ```
+
+<!-- more -->
 
 ## 修改jenkins默认主目录权限
 
