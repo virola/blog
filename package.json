@@ -10,7 +10,7 @@
     "dev": "hexo server",
     "start": "npm run dev",
     "minify": "gulp",
-    "build": "hexo clean && hexo generate && hexo deploy"
+    "build": "hexo clean && hexo generate && gulp && hexo deploy"
   },
   "dependencies": {
     "gulp": "^4.0.2",

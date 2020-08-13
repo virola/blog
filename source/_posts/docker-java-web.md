@@ -23,7 +23,7 @@ wget https://raw.githubusercontent.com/sameersbn/docker-gitlab/master/docker-com
 
 修改 `docker-compose.yml` 中的时区为 `Asia/Shanghai` 。
 
-<!-- 启动安装：
+直接一键启动安装：
 ```
 # 加上 d 是后台运行
 docker-compose up [d]
@@ -32,7 +32,9 @@ docker-compose up [d]
 默认挂载目录：
 - redis: /var/lib/redis
 - postgresql: /var/lib/postgresql
-- gitlab: /home/git/data -->
+- gitlab: /home/git/data
+
+### 自定义分布安装
 
 Step 1. Launch a postgresql container
 

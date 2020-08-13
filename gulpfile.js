@@ -1,6 +1,8 @@
 const { src, dest, parallel } = require('gulp')
 const minifyCSS = require('gulp-csso')
 const htmlmin = require('gulp-htmlmin')
+const uglify = require('gulp-uglify')
+const imagemin = require('gulp-imagemin')
 
 function html() {
   return src(['public/**/*.html', 'public/*.html'])
@@ -16,18 +18,25 @@ function html() {
         minifyCSS: true //压缩页面CSS
       })
     )
-    .pipe(dest('build/'))
+    .pipe(dest('public'))
 }
 
 function css() {
-  return src('public/css/*.css').pipe(minifyCSS()).pipe(dest('build/'))
+  return src('public/**/*.css').pipe(minifyCSS()).pipe(dest('public'))
 }
 
 function js() {
-  return src('public/js/*.js', { sourcemaps: true }).pipe(dest('build/', { sourcemaps: true }))
+  return src('public/**/*.js')
+    .pipe(uglify())
+    .pipe(dest('public', { sourcemaps: false }))
+}
+
+function img() {
+  return src('public/**/*.{png,jpg,jpeg,gif}').pipe(imagemin()).pipe(dest('public'))
 }
 
 exports.js = js
 exports.css = css
 exports.html = html
-exports.default = parallel(html, css, js)
+exports.img = img
+exports.default = parallel(html, css, js, img)
