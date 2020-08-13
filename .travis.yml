@@ -5,7 +5,7 @@ branches:
   only:
   - master
 install:
-- npm install hexo-cli -g
+- npm install hexo-cli gulp-cli -g
 - npm install
 - git clone https://github.com/virola/blog.git virola-blog
 addons:

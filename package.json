@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "hexo server",
     "start": "npm run dev",
-    "build": "hexo clean && hexo generate && gulp build && hexo deploy"
+    "minify": "gulp",
+    "build": "hexo clean && hexo generate && hexo deploy"
   },
   "dependencies": {
     "gulp": "^4.0.2",
@@ -31,5 +32,8 @@
     "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp-csso": "^4.0.1"
   }
 }
