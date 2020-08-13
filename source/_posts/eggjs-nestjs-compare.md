@@ -1,7 +1,7 @@
 title: Egg.js和nest.js两个node.js框架的对比
 date: 2019-07-12 11:28:52
 tags:
-- node
+- nodejs
 category: 
 - 前端
 ---

@@ -1,7 +1,7 @@
 title: node操作mysql数据库学习
 date: 2017-03-09 17:16:19
 tags: 
-- node
+- nodejs
 - mysql
 category: whatever
 ---

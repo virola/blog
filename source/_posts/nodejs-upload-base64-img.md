@@ -1,7 +1,7 @@
 title: nodejs将base64编码的图片上传至指定服务器
 date: 2020-08-12 16:28:59
 tags:
-- node
+- nodejs
 category: 后端
 ---
 
