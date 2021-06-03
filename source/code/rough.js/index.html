@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rough.js</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>RoughJS Basic Showcase (Canvas)</h2>
+    <div>
+      <canvas id="canvas" width="800" height="600"></canvas>
+    </div>
+    <script src="https://unpkg.com/roughjs@latest/bundled/rough.js"></script>
+    <script>
+      const rc = rough.canvas(document.getElementById('canvas'))
+      rc.rectangle(5, 5, 600, 200) // x, y, width, height
+      rc.circle(50, 50, 80, { fill: 'red', fillWeight: 3 }) // fill with red hachure
+      // Fill styles can be: hachure(default), solid, zigzag, cross-hatch, dots, sunburst, dashed, or zigzag-line
+      rc.circle(50, 150, 80, {
+        fill: 'rgb(10,150,10)',
+        fillStyle: 'zigzag',
+        fillWeight: 1 // thicker lines for hachure
+      })
+
+      rc.rectangle(120, 15, 80, 80, { fill: 'red', fillStyle: 'cross-hatch', })
+      rc.rectangle(120, 105, 80, 80, {
+        fill: 'rgba(255,0,200,0.2)',
+        fillStyle: 'solid' // solid fill
+      })
+
+      // 3
+      rc.rectangle(220, 15, 80, 80, {
+        fill: 'red',
+        hachureAngle: 60, // angle of hachure,
+        hachureGap: 8
+      })
+      rc.rectangle(220, 105, 80, 80, {
+        fill: 'purple',
+        hachureAngle: 60, // angle of hachure,
+        hachureGap: 8,
+        fillStyle: 'dashed'
+      })
+      // 4
+      rc.circle(370, 50, 80, {
+        fill: 'rgb(10,150,10)',
+        fillStyle: 'zigzag-line',
+      })
+      rc.circle(370, 150, 80, {
+        fill: 'rgb(10,150,10)',
+        fillStyle: 'dots',
+      })
+
+      // Sketching style
+      rc.rectangle(15, 235, 80, 80, { roughness: 0.5, fill: 'red', fillStyle: 'sunburst' });
+      rc.rectangle(120, 235, 80, 80, { roughness: 2.8, fill: 'blue' });
+      rc.rectangle(220, 235, 80, 80, { bowing: 6, stroke: 'green', strokeWidth: 3 });
+
+      // linearPath and polygon
+      rc.linearPath([[690, 10], [790, 20], [750, 120], [690, 100]], {
+        roughness: 0.7,
+        stroke: 'red', strokeWidth: 4
+      });
+      rc.polygon([[690, 130], [790, 140], [750, 240], [690, 220]]);
+      rc.polygon([[690, 250], [790, 260], [750, 360], [690, 340]], {
+        stroke: 'red', strokeWidth: 4,
+        fill: 'rgba(0,0,255,0.2)', fillStyle: 'solid'
+      });
+      rc.polygon([[690, 370], [790, 385], [750, 480], [690, 460]], {
+      stroke: 'red',
+      hachureAngle: 65,
+      fill: 'rgba(0,0,255,0.6)'
+    });
+    </script>
+  </body>
+</html>

@@ -38,6 +38,8 @@ ssh-keygen -f travis                    # 生成 travis, travis.pub
 cat travis.pub >> ~/.ssh/authorized_keys    # 将公钥添加到服务器认证列表
 ```
 
+注意：生成私钥的时候不能输入 `passphrase` 否则不能正常构建。
+
 ## 在server上加密travis私钥
 
 `travis` 加密命令是要通过 `gem` 安装的，请确保 `ruby` 已经安装。
@@ -49,9 +51,11 @@ travis login --pro --github-token=xxxxx                       # github token 在
 travis encrypt-file travis --com  --add   # 加密 travis 私钥，--add 会自动将解密命令添加到 .travis.yml
 ```
 
-Ps. 迁移到 travis-ci.com 的项目，需要添加参数 `--com` 
+注意：迁移到 travis-ci.com 的项目，需要添加参数 `--com` 
 
-将修改过的 `.travis.yml` 文件复制到项目目录里。
-新建一个 `.travis` 目录，把生成的 `travis.enc` 文件放进去。
 
-这时提交代码之后就可以在[网站](https://travis-ci.org/)上看到自动构建流程了。
+这时提交代码之后就可以在网站 https://travis-ci.org/ 或 https://travis-ci.com/ 上看到自动构建流程了。
+
+## 补充更新 by 2021.6.3
+
+`travis login` 目前只支持 `github-token` 一种方式了，使用用户名密码登录会报错。
