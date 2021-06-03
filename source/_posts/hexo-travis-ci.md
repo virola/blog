@@ -45,9 +45,11 @@ cat travis.pub >> ~/.ssh/authorized_keys    # 将公钥添加到服务器认证�
 
 ```
 gem install travis
-travis login --pro                       # github 帐号和密码，token 我没登录上
-travis encrypt-file travis  --add   # 加密 travis 私钥，--add 会自动将解密命令添加到 .travis.yml
+travis login --pro --github-token=xxxxx                       # github token 在设置中生成：https://github.com/settings/tokens
+travis encrypt-file travis --com  --add   # 加密 travis 私钥，--add 会自动将解密命令添加到 .travis.yml
 ```
+
+Ps. 迁移到 travis-ci.com 的项目，需要添加参数 `--com` 
 
 将修改过的 `.travis.yml` 文件复制到项目目录里。
 新建一个 `.travis` 目录，把生成的 `travis.enc` 文件放进去。
