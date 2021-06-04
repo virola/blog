@@ -57,10 +57,15 @@ curl -fsSL https://get.docker.com | bash -s docker
 ```
 
 启动docker
-```
-systemctl start docker  #启动docker
-systemctl enable docker #开机启动docker
-systemctl status docker #查看docker状态
+```bash
+#启动docker
+systemctl start docker
+
+#开机启动docker
+systemctl enable docker
+
+#查看docker状态
+systemctl status docker
 ```
 
 ### 安装docker-compose
@@ -134,12 +139,22 @@ yum install -y nginx
 
 nginx的启动指令：
 
-```
+```bash
+# 启动
 systemctl start nginx
+
+# 开机启动d
+systemctl enable nginx
+
+# reload
+systemctl reload nginx
+
+# 状态
+systemctl status nginx
 ```
 
 重启命令：
-```
+```bash
 pkill -9 nginx
 nginx
 ```

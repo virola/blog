@@ -35,7 +35,7 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 
 4 选择管理方式
 
-点击 `Local` 确定。
+点击 `Docker` -> `Connect` 确定。
 
 以上，配置完成。
 
