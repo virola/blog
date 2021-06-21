@@ -94,12 +94,15 @@ secret内容是之前生成gitee的access token。
 ## 同步脚本
 ```yml
 # File: .github/workflows/repo-sync.yml
-# 每天同步2次
+
 name: sync-blog
 on:
   workflow_dispatch:
-  watch:
-    types: started
+# 可以设置定时任务，每天同步2次
+#   schedule:
+#     - cron: '1 0,15 * * *'
+#   watch:
+#     types: started
   push:
     branches: [ master ]
 jobs:
@@ -114,14 +117,15 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync BLOG
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/virola/blog.git"
-          source_branch: "master"
-          destination_branch: "master"
-          github_token: ${{ secrets.ACCESS_TOKEN }}
+    # 如果需要同步指定作者的仓库，可以启用这部分配置
+    #   - name: sync BLOG
+    #     uses: repo-sync/github-sync@v2
+    #     if: env.PAT
+    #     with:
+    #       source_repo: "https://github.com/virola/blog.git"
+    #       source_branch: "master"
+    #       destination_branch: "master"
+    #       github_token: ${{ secrets.ACCESS_TOKEN }}
 
       # 一个用于在hub间（例如Github，Gitee）账户代码仓库同步的action
       - name: sync github -> gitee
