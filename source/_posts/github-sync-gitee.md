@@ -14,7 +14,7 @@ date: 2021-06-21 15:33:59
 
 在终端中输入： `ssh-keygen` ，不需要输入任何信息，直接回车，默认生成公钥文件如图：
 
-![public_key](./github-sync-gitee/public_key.png)
+![public key](/2021/github-sync-gitee/public_key.png)
 
 根据提示的文件路径，查看公钥内容：
 
@@ -44,7 +44,7 @@ ssh -T git@gitee.com
 Hi! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-
+<!-- more -->
 ## 2. Github、Gitee 中添加新的token
 
 1.github:
@@ -53,7 +53,7 @@ Hi! You've successfully authenticated, but GitHub does not provide shell access.
 
 点击： `Generate new token` 按钮
 
-![personal_token](./github-sync-gitee/personal_token.png)
+![personal token](/2021/github-sync-gitee/personal_token.png)
 
 生成之后，复制好token信息保存起来，以后**不会**再次显示。
 
@@ -67,7 +67,7 @@ Hi! You've successfully authenticated, but GitHub does not provide shell access.
 
 进入Github想要同步的仓库，选择 `Settings` -> `Secret` -> `New repository secret` ：
 
-![repo_secret](./github-sync-gitee/repo_secret.png)
+![repo_secret](/2021/github-sync-gitee/repo_secret.png)
 
 ### 1.添加 `ACCESS_TOKEN `
 
@@ -88,13 +88,12 @@ secret内容是之前生成gitee的access token。
 
 点击代码仓库中的 `Actions` ，可以自定义配置名称。
 
-![action_setup](./github-sync-gitee/action_setup.png)
+![action_setup](/2021/github-sync-gitee/action_setup.png)
 
 
 ## 同步脚本
 ```yml
 # File: .github/workflows/repo-sync.yml
-
 name: sync-blog
 on:
   workflow_dispatch:
@@ -136,5 +135,8 @@ jobs:
           dst: gitee/virola
           dst_key: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
-
+          # 静态名单（可用于单一仓库同步）
+          static_list: "blog"
+          force_update: true
+          timeout: '1h'
 ```

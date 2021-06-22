@@ -127,11 +127,15 @@ article
     line-height 2
     p, blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
       margin-top 15px
-    a 
-      &:not(.btn)
+    a
+      &.fancybox
+        display: inline-block
+        img
+          box-shadow: 0 0 5px rgba(90, 90, 40, 0.8)
+      &:not(.btn):not(.fancybox)
         border-bottom: 1px solid rgba(204, 142, 4, 0.25)
         padding-bottom: 1px
-        &:hover 
+        &:hover
           border-bottom: 1px solid color-link-focus
           text-decoration: none
 
