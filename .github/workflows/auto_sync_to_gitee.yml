@@ -20,16 +20,6 @@ jobs:
         with:
           persist-credentials: false
 
-    # 如果需要同步指定作者的仓库，可以启用这部分配置
-    #   - name: sync BLOG
-    #     uses: repo-sync/github-sync@v2
-    #     if: env.PAT
-    #     with:
-    #       source_repo: "https://github.com/virola/blog.git"
-    #       source_branch: "master"
-    #       destination_branch: "master"
-    #       github_token: ${{ secrets.ACCESS_TOKEN }}
-
       # 一个用于在hub间（例如Github，Gitee）账户代码仓库同步的action
       - name: sync github -> gitee
         uses: Yikun/hub-mirror-action@master
@@ -39,3 +29,7 @@ jobs:
           dst: gitee/virola
           dst_key: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
+          # 静态名单（可用于单一仓库同步）
+          static_list: "blog"
+          force_update: true
+          timeout: '1h'
