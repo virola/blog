@@ -6,4 +6,4 @@ date: 2017-03-09 16:21:35
 
 混迹互联网行业，喜好前端开发。
 
-{% img photo /album/photo/virola2016.jpg %}
+<!-- {% img photo /album/photo/virola2016.jpg %} -->
