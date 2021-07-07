@@ -117,3 +117,44 @@ Result:
 
 ## 新建jenkins项目
 
+新建一个 `pipeline` 类型的项目，在 `流水线` 中定义好脚本：
+
+```sh
+pipeline {
+    agent any
+    tools {
+        jdk 'jdk'
+    }
+
+    stages {
+        stage('checkout') {
+            steps {
+                git credentialsId: '可能会需要密钥拉取', url: '这里填要拉取的git地址'
+            }
+        }
+        stage('build') {
+            steps {
+                # 先删除原先生成的报告，否则结果目录不为空jmeter执行会报错
+                sh 'rm -rf $WORKSPACE/result.jtl'
+                sh 'rm -rf $WORKSPACE/result'
+                # 执行jmeter对应脚本，指定生成文件 result.jtl， 指定生成的web结果到 result 目录
+                sh '/app/jmeter/bin/jmeter -n -t ${WORKSPACE}/funcs_test.jmx -l $WORKSPACE/result.jtl -e -o $WORKSPACE/result'
+
+                # 使用HTML publisher 插件生成HTML报告
+                publishHTML([
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: false,
+                    keepAll: false, reportDir: 'result',
+                    reportFiles: 'index.html', reportName: 'HTML Report',
+                    reportTitles: ''
+                ])
+            }
+        }
+    }
+}
+
+```
+
+跑一次立即构建，就可以看到构建成果啦。
+
+So easy~
