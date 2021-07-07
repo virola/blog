@@ -1,7 +1,7 @@
 title: hexo用travis-ci实现自动部署
 date: 2019-01-08 00:11:36
-tags:
-category:
+tags: whatever
+category: whatever
 ---
 
 ## 一些操作更新by 2019.11.13
@@ -51,7 +51,7 @@ travis login --pro --github-token=xxxxx                       # github token 在
 travis encrypt-file travis --com  --add   # 加密 travis 私钥，--add 会自动将解密命令添加到 .travis.yml
 ```
 
-注意：迁移到 travis-ci.com 的项目，需要添加参数 `--com` 
+注意：迁移到 travis-ci.com 的项目，需要添加参数 `--com`
 
 
 这时提交代码之后就可以在网站 https://travis-ci.org/ 或 https://travis-ci.com/ 上看到自动构建流程了。
