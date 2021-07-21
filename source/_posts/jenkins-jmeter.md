@@ -1,6 +1,5 @@
 title: 在jenkins pipeline 项目 + jmeter 自动化测试 + HTML Publisher 生成测试报告
 tags:
-  - whatever
   - jenkins
 category: whatever
 date: 2021-07-07 17:10:14
@@ -158,3 +157,86 @@ pipeline {
 跑一次立即构建，就可以看到构建成果啦。
 
 So easy~
+
+## 更进一步
+
+现在有了报告结果，得自己跑去jenkins上看，如果测试结果可以通过邮件或者某些其他更方便的通知方式反馈给开发者就更好了。
+这就是下一步我要研究的topic。
+
+**jenkins + Email/Dingding/企业微信 自动发送通知**
+
+### 邮件通知
+
+1、插件准备
+
+- Email Extension
+- Email Extension Template
+
+2、配置Email
+
+`Manage Jenkins` -> `Configuration System` -> `邮件通知`，打开`高级`
+
+填入邮件配置相关设置，注意，如果邮箱stmp服务使用了授权码，密码处填的则是`授权码`。测试邮件发送，如果提示错误：
+```
+553 Mail from must equal authorized user
+```
+则需要在 `Jenkins Location` 中配置 `系统管理员邮件地址` ，地址和邮件通知的地址保持一致。
+
+![邮件通知](/2021/jenkins-jmeter/email.png)
+
+点击测试发送，如果提示发送成功，则表示配置好了，保存。
+
+3、配置Extended E-mail Notification
+**如果邮箱服务器需要授权码，那么配置这个插件的时候需要增加新的授权码**
+
+实测项目中如果使用与上面Email配置相同的授权码，构建不会报错但是邮件不能正常发送。
+
+- Default Content Type ：内容类型选择 HTML，建议勾上
+- Default Subject ：默认邮件主题
+- Default Content ：默认邮件内容
+- Default Triggers ：默认触发条件配置
+
+4、在项目流水线pipeline中增加相应配置
+
+```sh
+pipeline {
+    // ...
+    post {
+        always {
+            emailext body: '''<hr/>(自动化构建邮件，无需回复！)<br/><hr/>
+
+项目名称：$PROJECT_NAME<br/><br/>
+
+项目描述：$JOB_DESCRIPTION<br/><br/>
+
+运行编号：$BUILD_NUMBER<br/><br/>
+
+运行结果：$BUILD_STATUS<br/><br/>
+
+触发原因：${CAUSE}<br/><br/>
+
+构建日志地址：<a href="${BUILD_URL}console">${BUILD_URL}console</a><br/><br/>
+
+构建地址：<a href="$BUILD_URL">$BUILD_URL</a><br/><br/>
+
+详情：${JELLY_SCRIPT,template="html"}<br/>
+
+<hr/>''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!', to: 'receipter@126.com'
+        }
+    }
+}
+```
+
+这样每次构建完成之后，不管成功或者失败，都会发送邮件给指定的用户。
+
+邮件发送设置成功了，现在的问题就剩下，怎么把jmeter生成的报告转成邮件格式。
+
+TODO.
+
+### 其他自定义机器人类型通知
+
+TODO.
+
+<!-- #### 微信通知插件 -->
+<!-- 信息已过期，新版不可用 -->
+<!-- 来自 [jenkins-wechat-notifier](https://github.com/huangmb/jenkins-wechat-notifier)
