@@ -236,7 +236,3 @@ TODO.
 ### 其他自定义机器人类型通知
 
 TODO.
-
-<!-- #### 微信通知插件 -->
-<!-- 信息已过期，新版不可用 -->
-<!-- 来自 [jenkins-wechat-notifier](https://github.com/huangmb/jenkins-wechat-notifier)
