@@ -2,7 +2,7 @@ const { src, dest, parallel } = require('gulp')
 const minifyCSS = require('gulp-csso')
 const htmlmin = require('gulp-htmlmin')
 const uglify = require('gulp-uglify')
-const imagemin = require('gulp-imagemin')
+// const imagemin = require('gulp-imagemin')
 
 function html() {
   return src(['public/**/*.html', 'public/*.html'])
@@ -31,12 +31,11 @@ function js() {
     .pipe(dest('public', { sourcemaps: false }))
 }
 
-function img() {
-  return src('public/**/*.{png,jpg,jpeg,gif}').pipe(imagemin()).pipe(dest('public'))
-}
+// function img() {
+//   return src('public/**/*.{png,jpg,jpeg,gif}').pipe(imagemin()).pipe(dest('public'))
+// }
 
 exports.js = js
 exports.css = css
 exports.html = html
-exports.img = img
-exports.default = parallel(html, css, js, img)
+exports.default = parallel(html, css, js)

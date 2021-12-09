@@ -10,7 +10,8 @@
     "dev": "hexo server",
     "start": "npm run dev",
     "minify": "gulp",
-    "build": "hexo clean && hexo generate && gulp && hexo deploy"
+    "build": "hexo clean && hexo generate && gulp && hexo deploy",
+    "deploy:tcb": "tcb hosting deploy public/ blog/"
   },
   "dependencies": {
     "gulp": "^4.0.2",
