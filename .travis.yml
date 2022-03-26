@@ -1,21 +1,19 @@
+sudo: false
 language: node_js
 node_js:
-- 12
+  - 12
+cache: npm
 branches:
   only:
-  - master
-install:
-- npm install hexo-cli gulp-cli -g
-- npm install
-- git clone https://github.com/virola/blog.git virola-blog
-addons:
-  ssh_known_hosts: 45.76.160.45:22
+    - master
 script:
-- npm run build && rsync -az -vv -e 'ssh -p 22 -o stricthostkeychecking=no' public/
-  root@45.76.160.45:/home/wwwroot/blog.zhuyuwei.cn
-before_install:
-- openssl aes-256-cbc -K $encrypted_e6cc0fb2b8da_key -iv $encrypted_e6cc0fb2b8da_iv
-  -in travis.enc -out travis -d
-- chmod 600 travis
-- mv travis ~/.ssh/id_rsa
-- echo -e "Host 45.76.160.45\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - hexo generate && hexo deploy
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  target-branch: deploy #部署到master分支
+  on:
+    branch: master
+  local-dir: public
