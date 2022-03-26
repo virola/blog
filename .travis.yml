@@ -9,13 +9,13 @@ install:
 - npm install
 - git clone https://github.com/virola/blog.git virola-blog
 addons:
-  ssh_known_hosts: 198.13.39.99:22
+  ssh_known_hosts: 45.76.160.45:22
 script:
 - npm run build && rsync -az -vv -e 'ssh -p 22 -o stricthostkeychecking=no' public/
-  root@198.13.39.99:/home/wwwroot/blog.zhuyuwei.cn
+  root@45.76.160.45:/home/wwwroot/blog.zhuyuwei.cn
 before_install:
 - openssl aes-256-cbc -K $encrypted_e6cc0fb2b8da_key -iv $encrypted_e6cc0fb2b8da_iv
   -in travis.enc -out travis -d
 - chmod 600 travis
 - mv travis ~/.ssh/id_rsa
-- echo -e "Host 198.13.39.99\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- echo -e "Host 45.76.160.45\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
