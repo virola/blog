@@ -1,4 +1,3 @@
-sudo: false
 language: node_js
 node_js:
   - 12
@@ -7,13 +6,12 @@ branches:
   only:
     - master
 script:
-  - hexo generate && hexo deploy
+  - hexo generate
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
-  target-branch: deploy #部署到master分支
+  token: $GH_TOKEN
+  keep_history: true
+  target_branch: deploy
   on:
     branch: master
-  local-dir: public
+  local_dir: public
