@@ -5,13 +5,17 @@ cache: npm
 branches:
   only:
     - master
+install:
+  - npm install hexo-cli gulp-cli -g
+  - npm install
+addons:
+  ssh_known_hosts: 45.76.160.45:22
 script:
-  - hexo generate
+  - npm run build
 deploy:
   provider: pages
-  token: $GH_TOKEN
+  skip_cleanup: true
+  github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
-  target_branch: deploy
   on:
-    branch: master
-  local_dir: public
+    branch: main
