@@ -115,7 +115,7 @@ ssh ubuntu@ip.ip.ip.ip
 
 ## 配置 travis ci
 
-1. 远程服务器上 git clone 项目目录
+1. 任意服务器或本地 git clone 项目目录
 
 2. 进入项目目录，登录 travis 用户
 ```
@@ -159,3 +159,8 @@ after_success:
   - rsync -az --delete ./public/* root@$IP:/usr/share/nginx/html/blog
 
 ```
+
+## 补充说明
+
+- 部署了私钥的 aws ubuntu 还是会报 permisson deny 怎么解决？
+在 `配置 travis ci` 的第2步里，travis 加密时选择的密钥要选择 aws 上配对的密钥。

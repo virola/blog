@@ -20,16 +20,13 @@ deploy:
     branch: master
 addons:
   ssh_known_hosts:
-  - $IP
+  - "$IP"
 before_install:
-- openssl aes-256-cbc -K $encrypted_edf35525f8fd_key -iv $encrypted_edf35525f8fd_iv
-  -in aws.pem.enc -out ~/.ssh/id_rsa -d
+- openssl aes-256-cbc -K $encrypted_529cc86b1780_key -iv $encrypted_529cc86b1780_iv
+  -in id_rsa_aws.enc -out ~/.ssh/id_rsa_aws -d
 - chmod 600 ~/.ssh/id_rsa_aws
 - echo -e "Host $IP\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-
-# 执行部署脚本，将编译后的项目同步到服务器的nginx项目目录下
 after_success:
-  - chmod 600 ~/.ssh/id_rsa
-  - rsync -az --delete ./public/* ubuntu@$IP:/home/ubuntu/github
-  - rsync -az --delete ./public/* ubuntu@$IP:/usr/share/nginx/html/blog
-
+- chmod 600 ~/.ssh/id_rsa_aws
+- rsync -az --delete ./public/* ubuntu@$IP:/home/ubuntu/github
+- rsync -az --delete ./public/* ubuntu@$IP:/usr/share/nginx/html/blog
