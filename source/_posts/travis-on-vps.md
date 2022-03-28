@@ -44,9 +44,9 @@ hexo 默认生成的静态文件是在 `public` 目录下的，所以这里 `loc
 
 <!-- more -->
 
-## Ubuntu 20 安装 travis ci 客户端
+## 安装 travis ci 客户端
 
-1.进入root用户
+1.进入root用户（非root用户的时候）
 ```
 sudo su
 ```
@@ -115,7 +115,7 @@ ssh ubuntu@ip.ip.ip.ip
 
 ## 配置 travis ci
 
-1. 任意服务器或本地 git clone 项目目录
+1. 在本地机器 git clone 项目目录
 
 2. 进入项目目录，登录 travis 用户
 ```
@@ -162,5 +162,4 @@ after_success:
 
 ## 补充说明
 
-- 部署了私钥的 aws ubuntu 还是会报 permisson deny 怎么解决？
-在 `配置 travis ci` 的第2步里，travis 加密时选择的密钥要选择 aws 上配对的密钥。
+travis 安装、登录要和 `ssh-keygen` 生成免密登录密钥对的机器在同一个机器上，才能保证加密解密的正确性。
