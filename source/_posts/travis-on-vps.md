@@ -115,32 +115,22 @@ ssh ubuntu@ip.ip.ip.ip
 
 ## 配置 travis ci
 
-1. 在本地机器 git clone 项目目录
-
-2. 进入项目目录，登录 travis 用户
+1. 进入项目目录，登录 travis 用户
 ```
 # github token 在设置中生成：https://github.com/settings/tokens
 travis login --pro --github-token=xxxxx
 ```
 成功时提示： `Successfully logged in as xxx`
 
+2. 加密 travis 私钥
 ```
 # 在项目根目录下，加密 travis 私钥，--add 会自动将解密命令添加到 .travis.yml
 travis encrypt-file ~/.ssh/id_rsa_aws --add --pro
 ```
 
-Ps.如果出现~\/.ssh/id_rsa就**将反斜杠去掉**
+Ps.如果 `.travis.yml` 出现~\/.ssh/id_rsa就**将反斜杠去掉**
 
-3. git commit & git push 提交项目文件
-注意，github 现在不支持用户名密码的方式 commit 了，需要使用 github token提交代码。方法如下：
-
-```
-git remote set-url origin https://github_token_xxx@github.com/virola/blog.git
-
-# 提交代码
-git push -u origin master
-```
-4. 继续完善 `.travis.yml` 文件
+3. 继续完善 `.travis.yml` 文件
 ```yml
 # ...省略之前的配置
 
@@ -154,10 +144,22 @@ before_install:
 - echo -e "Host $IP\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
 # 执行部署脚本，将编译后的项目同步到服务器的webapps下
+# 注意 rsync 需要指定密钥地址
 after_success:
   - chmod 600 ~/.ssh/id_rsa_aws
-  - rsync -az --delete ./public/* root@$IP:/usr/share/nginx/html/blog
+  - rsync -e "ssh -i ~/.ssh/id_rsa_aws" -az --delete ./public/* root@$IP:/usr/share/nginx/html/blog
 
+```
+
+最后提交代码。看 travis 控制台中是否构建成功。
+
+注意，github 现在不支持用户名密码的方式 commit 了，需要使用 github token提交代码。方法如下：
+
+```
+git remote set-url origin https://github_token_xxx@github.com/virola/blog.git
+
+# 提交代码
+git push -u origin master
 ```
 
 ## 补充说明
