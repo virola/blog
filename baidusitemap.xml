@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.zhuyuwei.cn/2019/mac-jenkins-wechat.html</loc>
-    <lastmod>2022-03-28</lastmod>
-  </url>
-  <url>
-    <loc>http://www.zhuyuwei.cn/2018/mina-setup-for-ruby-on-rails.html</loc>
-    <lastmod>2022-03-28</lastmod>
-  </url>
-  <url>
-    <loc>http://www.zhuyuwei.cn/2019/nestjs-mysql.html</loc>
-    <lastmod>2022-03-28</lastmod>
-  </url>
-  <url>
-    <loc>http://www.zhuyuwei.cn/2017/node-mysql-beginner.html</loc>
-    <lastmod>2022-03-28</lastmod>
-  </url>
-  <url>
-    <loc>http://www.zhuyuwei.cn/2020/nodejs-upload-base64-img.html</loc>
-    <lastmod>2022-03-28</lastmod>
-  </url>
-  <url>
-    <loc>http://www.zhuyuwei.cn/2015/qinghai.html</loc>
-    <lastmod>2022-03-28</lastmod>
-  </url>
-  <url>
     <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
     <lastmod>2022-03-28</lastmod>
   </url>
@@ -122,6 +98,30 @@
   </url>
   <url>
     <loc>http://www.zhuyuwei.cn/2021/jenkins-jmeter.html</loc>
+    <lastmod>2022-03-28</lastmod>
+  </url>
+  <url>
+    <loc>http://www.zhuyuwei.cn/2019/mac-jenkins-wechat.html</loc>
+    <lastmod>2022-03-28</lastmod>
+  </url>
+  <url>
+    <loc>http://www.zhuyuwei.cn/2018/mina-setup-for-ruby-on-rails.html</loc>
+    <lastmod>2022-03-28</lastmod>
+  </url>
+  <url>
+    <loc>http://www.zhuyuwei.cn/2019/nestjs-mysql.html</loc>
+    <lastmod>2022-03-28</lastmod>
+  </url>
+  <url>
+    <loc>http://www.zhuyuwei.cn/2017/node-mysql-beginner.html</loc>
+    <lastmod>2022-03-28</lastmod>
+  </url>
+  <url>
+    <loc>http://www.zhuyuwei.cn/2020/nodejs-upload-base64-img.html</loc>
+    <lastmod>2022-03-28</lastmod>
+  </url>
+  <url>
+    <loc>http://www.zhuyuwei.cn/2015/qinghai.html</loc>
     <lastmod>2022-03-28</lastmod>
   </url>
 </urlset> 
