@@ -28,5 +28,4 @@ before_install:
 - echo -e "Host $IP\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 after_success:
 - chmod 600 ~/.ssh/id_rsa_aws
-- rsync -e "ssh -i ~/.ssh/id_rsa_aws" -az --delete ./public/* ubuntu@$IP:/home/ubuntu/github
-- rsync -e "ssh -i ~/.ssh/id_rsa_aws" -az --delete ./public/* ubuntu@$IP:/usr/share/nginx/html/blog
+- rsync -e "ssh -i ~/.ssh/id_rsa_aws" -az --delete ./public/* ubuntu@$IP:/home/ubuntu/blog
