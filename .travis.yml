@@ -1,22 +1,25 @@
 language: node_js
 node_js:
-  - 12
+- 12
 cache: npm
 branches:
   only:
-    - master
+  - master
 install:
-  - npm install hexo-cli gulp-cli -g
-  - npm install
+- npm install hexo-cli gulp-cli -g
+- npm install
 addons:
   ssh_known_hosts: 45.76.160.45:22
 script:
-  - npm run build
+- npm run build
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+  github_token: "$GH_TOKEN"
   keep_history: true
   local_dir: public
   on:
     branch: master
+before_install:
+- openssl aes-256-cbc -K $encrypted_edf35525f8fd_key -iv $encrypted_edf35525f8fd_iv
+  -in id_rsa_aws.enc -out ~\/.ssh/id_rsa_aws -d
