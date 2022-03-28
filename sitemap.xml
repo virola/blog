@@ -4,106 +4,16 @@
   <url>
     <loc>http://www.zhuyuwei.cn/code/rough.js/index.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://www.zhuyuwei.cn/2019/mac-jenkins-wechat.html</loc>
+    <loc>http://www.zhuyuwei.cn/code/yaml/docker-compose.json</loc>
     
-    <lastmod>2022-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.zhuyuwei.cn/2018/mina-setup-for-ruby-on-rails.html</loc>
-    
-    <lastmod>2022-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.zhuyuwei.cn/2019/nestjs-mysql.html</loc>
-    
-    <lastmod>2022-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.zhuyuwei.cn/2017/node-mysql-beginner.html</loc>
-    
-    <lastmod>2022-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.zhuyuwei.cn/2020/nodejs-upload-base64-img.html</loc>
-    
-    <lastmod>2022-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.zhuyuwei.cn/2015/qinghai.html</loc>
-    
-    <lastmod>2022-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
-    
-    <lastmod>2022-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.zhuyuwei.cn/2018/ruby-on-rails-user-token.html</loc>
-    
-    <lastmod>2022-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.zhuyuwei.cn/2018/ruby-on-rails-with-mysql.html</loc>
-    
-    <lastmod>2022-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.zhuyuwei.cn/2018/scripts-grab-images.html</loc>
-    
-    <lastmod>2022-03-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.zhuyuwei.cn/2018/seo-for-hexo.html</loc>
-    
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -112,7 +22,25 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2021/serverless.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2022/travis-on-vps.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2021/trojan-docker.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -121,7 +49,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2016/typescript-require-error.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -130,7 +58,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2021/vps-docker-shadowsocks.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -139,7 +67,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2019/vps-migration.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -148,7 +76,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2018/vue-cli-css-prefixer.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -157,7 +85,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2018/vue-json-mock-post.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -166,7 +94,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2018/vue-meta-for-vuejs.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -175,7 +103,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/about-me/index.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -184,7 +112,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2015/centos-7-installation.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -193,7 +121,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2021/centos-yum-nginx.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -202,7 +130,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2019/docker-java-web.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -211,7 +139,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2021/docker-portainer.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -220,7 +148,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2019/eggjs-nestjs-compare.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -229,7 +157,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2016/es6-beginner.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -238,7 +166,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2021/github-sync-gitee.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -247,7 +175,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2020/gulp-compress.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -256,7 +184,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2015/hello-world.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -265,7 +193,7 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2019/hexo-travis-ci.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -274,7 +202,106 @@
   <url>
     <loc>http://www.zhuyuwei.cn/2021/jenkins-jmeter.html</loc>
     
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2019/mac-jenkins-wechat.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2018/mina-setup-for-ruby-on-rails.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2019/nestjs-mysql.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2017/node-mysql-beginner.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2020/nodejs-upload-base64-img.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2015/qinghai.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2016/react-or-angular.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2018/ruby-on-rails-user-token.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2018/ruby-on-rails-with-mysql.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2018/scripts-grab-images.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/2018/seo-for-hexo.html</loc>
+    
+    <lastmod>2022-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -283,7 +310,7 @@
 
   <url>
     <loc>http://www.zhuyuwei.cn/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -291,168 +318,182 @@
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/photo/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/linux/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/java/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/web/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/docker/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/nodejs/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/whatever/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/git/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/github/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/gulp/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/jenkins/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/mac/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/ruby-on-rails/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/mina/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/nestjs/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/mysql/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/travel/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/%E5%8F%91%E5%8F%91%E7%89%A2%E9%AA%9A/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/phantomjs/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/shell/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/serverless/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/vue/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/tags/vps/</loc>
+    <lastmod>2022-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/tags/travis/</loc>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/angular/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/tags/VPS/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -461,42 +502,49 @@
   
   <url>
     <loc>http://www.zhuyuwei.cn/categories/photo/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/categories/whatever/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/categories/linux/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/categories/%E5%90%8E%E7%AB%AF/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.zhuyuwei.cn/categories/vps/</loc>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://www.zhuyuwei.cn/categories/tips/</loc>
-    <lastmod>2022-03-26</lastmod>
+    <lastmod>2022-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

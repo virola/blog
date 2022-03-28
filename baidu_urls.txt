@@ -1,3 +1,5 @@
+http://www.zhuyuwei.cn/2022/travis-on-vps.html
+http://www.zhuyuwei.cn/2021/trojan-docker.html
 http://www.zhuyuwei.cn/2021/serverless.html
 http://www.zhuyuwei.cn/2021/jenkins-jmeter.html
 http://www.zhuyuwei.cn/2021/github-sync-gitee.html
@@ -6,5 +8,3 @@ http://www.zhuyuwei.cn/2021/docker-portainer.html
 http://www.zhuyuwei.cn/2021/vps-docker-shadowsocks.html
 http://www.zhuyuwei.cn/2020/gulp-compress.html
 http://www.zhuyuwei.cn/2020/nodejs-upload-base64-img.html
-http://www.zhuyuwei.cn/2019/mac-jenkins-wechat.html
-http://www.zhuyuwei.cn/2019/docker-java-web.html
