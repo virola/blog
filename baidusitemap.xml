@@ -21,22 +21,6 @@
     <lastmod>2022-04-08</lastmod>
   </url>
   <url>
-    <loc>http://www.zhuyuwei.cn/2020/gulp-compress.html</loc>
-    <lastmod>2022-04-08</lastmod>
-  </url>
-  <url>
-    <loc>http://www.zhuyuwei.cn/2015/hello-world.html</loc>
-    <lastmod>2022-04-08</lastmod>
-  </url>
-  <url>
-    <loc>http://www.zhuyuwei.cn/2019/hexo-travis-ci.html</loc>
-    <lastmod>2022-04-08</lastmod>
-  </url>
-  <url>
-    <loc>http://www.zhuyuwei.cn/2021/jenkins-jmeter.html</loc>
-    <lastmod>2022-04-08</lastmod>
-  </url>
-  <url>
     <loc>http://www.zhuyuwei.cn/2019/mac-jenkins-wechat.html</loc>
     <lastmod>2022-04-08</lastmod>
   </url>
@@ -122,6 +106,22 @@
   </url>
   <url>
     <loc>http://www.zhuyuwei.cn/2021/github-sync-gitee.html</loc>
+    <lastmod>2022-04-08</lastmod>
+  </url>
+  <url>
+    <loc>http://www.zhuyuwei.cn/2020/gulp-compress.html</loc>
+    <lastmod>2022-04-08</lastmod>
+  </url>
+  <url>
+    <loc>http://www.zhuyuwei.cn/2015/hello-world.html</loc>
+    <lastmod>2022-04-08</lastmod>
+  </url>
+  <url>
+    <loc>http://www.zhuyuwei.cn/2019/hexo-travis-ci.html</loc>
+    <lastmod>2022-04-08</lastmod>
+  </url>
+  <url>
+    <loc>http://www.zhuyuwei.cn/2021/jenkins-jmeter.html</loc>
     <lastmod>2022-04-08</lastmod>
   </url>
 </urlset> 
