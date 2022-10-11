@@ -10,14 +10,14 @@ install:
 - npm install
 script:
 - npm run build
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: "$GH_TOKEN"
-  keep_history: true
-  local_dir: public
-  on:
-    branch: master
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: "$GH_TOKEN"
+#   keep_history: true
+#   local_dir: public
+#   on:
+#     branch: master
 addons:
   ssh_known_hosts:
   - "$IP"
