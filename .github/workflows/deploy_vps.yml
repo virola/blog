@@ -51,17 +51,16 @@ jobs:
         uses: easingthemes/ssh-deploy@v2
         env:
           SSH_PRIVATE_KEY: ${{ env.SERVER_PRIVATE_KEY }}
-          ARGS: '-rlgoDzvc -i'
-          #   ARGS: '-avz --delete'
+          ARGS: '-avz --delete'
           SOURCE: 'public/'
           REMOTE_HOST: ${{ env.SERVER_HOST }}
           REMOTE_USER: ${{ env.USER_NAME }}
           # 服务器目标路径
           TARGET: '/root/html/blog'
-          SCRIPT_BEFORE: |
-            whoami
-            ls -al
-          SCRIPT_AFTER: |
-            whoami
-            ls -al
-            echo $RSYNC_STDOUT
+          # SCRIPT_BEFORE: |
+          #   whoami
+          #   ls -al
+          # SCRIPT_AFTER: |
+          #   whoami
+          #   ls -al
+          #   echo $RSYNC_STDOUT
