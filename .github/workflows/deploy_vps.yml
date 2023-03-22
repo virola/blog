@@ -36,11 +36,10 @@ jobs:
             ${{ runner.os }}-
 
       # 装依赖
-      - name: Before Install
-        run: yarn global add hexo-cli
-
       - name: Install
-        run: yarn
+        run:
+          - yarn global add hexo-cli
+          - yarn
 
       # 打包
       - name: Build
@@ -48,11 +47,20 @@ jobs:
 
       # 上传打包资源
       - name: Deploy
-        uses: easingthemes/ssh-deploy@v2.0.7
+        uses: easingthemes/ssh-deploy@v2
         env:
           SSH_PRIVATE_KEY: ${{ env.SERVER_PRIVATE_KEY }}
-          ARGS: '-avz --delete'
+          ARGS: '-rlgoDzvc -i'
+          #   ARGS: '-avz --delete'
           SOURCE: 'public/'
           REMOTE_HOST: ${{ env.SERVER_HOST }}
           REMOTE_USER: ${{ env.USER_NAME }}
-          TARGET: /root/html/blog # 服务器目标路径
+          # 服务器目标路径
+          TARGET: '/root/html/blog'
+          SCRIPT_BEFORE: |
+            whoami
+            ls -al
+          SCRIPT_AFTER: |
+            whoami
+            ls -al
+            echo $RSYNC_STDOUT
