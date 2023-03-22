@@ -6,12 +6,6 @@ on:
   push:
     branches: [master]
 
-env:
-  SERVER_PRIVATE_KEY: ${{ secrets.SERVER_PRIVATE_KEY }} # 服务器私钥
-  SERVER_HOST: ${{ secrets.SERVER_HOST }} # 服务器IP地址
-  USER_NAME: ${{ secrets.USER_NAME }} # 服务器用户名
-  cache-name: blog
-
 jobs:
   build: # 任务的job_id，具体名称自定义，这里build代表打包
     runs-on: ubuntu-latest # runs-on字段指定运行所需要的虚拟机环境。注意：这个是必填字段
@@ -46,23 +40,12 @@ jobs:
       - name: Build
         run: yarn build
 
-      # # 上传打包资源
-      # - name: Deploy
-      #   uses: easingthemes/ssh-deploy@v2
-      #   env:
-      #     SSH_PRIVATE_KEY: ${{ env.SERVER_PRIVATE_KEY }}
-      #     ARGS: '-avz --delete'
-      #     SOURCE: 'public/'
-      #     REMOTE_HOST: ${{ env.SERVER_HOST }}
-      #     REMOTE_USER: ${{ env.USER_NAME }}
-      #     # 服务器目标路径
-      #     TARGET: '/root/html/blog'
       - name: Deploy file
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          username: ${{ env.USER_NAME }}
-          server: ${{ env.SERVER_HOST }}
-          ssh_private_key: ${{ env.SERVER_PRIVATE_KEY }}
+          username: ${{ secrets.USER_NAME }}
+          server: ${{ secrets.SERVER_HOST }}
+          ssh_private_key: ${{ secrets.SERVER_PRIVATE_KEY }}
           local_path: './public/*'
           remote_path: '/root/html/blog'
           sftpArgs: '-o ConnectTimeout=5'
