@@ -128,7 +128,10 @@ source /etc/profile.d/rvm.sh
 注意：项目目录所在机器也需要是 linux 机器，windows 安装不了 travis 客户端。
 
 1. 在本地机器上使用 `ssh-keygen` 产生公钥私钥对
-   `ssh-keygen`
+
+```
+ssh-keygen -m PEM -t rsa -b 4096
+```
 
 2. 用 `ssh-copy-id` 将公钥复制到远程机器中
 
