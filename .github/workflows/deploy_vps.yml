@@ -38,8 +38,7 @@ jobs:
       # 装依赖
       - name: Install
         run:
-          - yarn global add hexo-cli
-          - yarn
+          - yarn global add hexo-cli && yarn
 
       # 打包
       - name: Build
