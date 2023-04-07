@@ -1,4 +1,6 @@
 # Hexo Configuration
+## 本地开发环境使用这个配置
+## hexo server --config _local.yml
 ## Docs: http://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
@@ -45,8 +47,6 @@ highlight:
 
 # Category & Tag
 default_category: whatever
-category_map:
-tag_map:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -64,23 +64,19 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: light-new
-
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  - type: baidu_url_submitter
+# deploy:
+#   - type: git
+#     repo:
 
-# baidu sitemap submit
+# 配置百度链接主动推送
 baidu_url_submit:
-  count: 10 # 提交最新的一个链接
-  host: www.zhuyuwei.cn # 在百度站长平台中注册的域名
-  token: Z9OwI6YaFcRnfN1G # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
-  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+  count: 10 	# 表示提交最新的10个链接
+  code: 
 
 baidu_site_verification:
-  enable: true
-  code: e5EBCWO83G
-
+  enable: false
+  
 google_site_verification:
-  enable: true
-  code: P1Pa9bT3k2Wsn9uKE5in0gjGysZ4xBYGPYkCsxtkpyI
+  enable: false
