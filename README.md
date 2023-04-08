@@ -1,24 +1,19 @@
 # virola's blog
 
-<http://blog.zhuyuwei.cn>
+<https://zhuyuwei.cn>
 
 markdown blog
 
 run server:
 ```
-npm run dev
+yarn dev
 ```
 
 build:
 ```
-npm run build
+yarn build
 ```
 
-deploy。
-部署到腾讯云开发静态托管
-```
-npm run deploy:tcb
-```
 
 如果部署在子目录，注意需要修改 `_config.yml` 中的 `root` 字段。
 
